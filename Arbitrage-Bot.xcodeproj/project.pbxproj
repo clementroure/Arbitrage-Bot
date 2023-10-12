@@ -1,0 +1,2273 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		68680A242A77D8BE0079309F /* Periphery */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 68680A252A77D8BE0079309F /* Build configuration list for PBXAggregateTarget "Periphery" */;
+			buildPhases = (
+				68680A282A77D8C80079309F /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Periphery;
+			productName = Periphery;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		68017B402A570FBD00837B89 /* DecisionSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68017B3F2A570FBD00837B89 /* DecisionSubscriber.swift */; };
+		68017B442A57101400837B89 /* DecisionDataPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68017B432A57101400837B89 /* DecisionDataPublisher.swift */; };
+		68017B472A57117600837B89 /* ArbitrageSwapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68017B462A57117600837B89 /* ArbitrageSwapCoordinator.swift */; };
+		6809AFA72A486FB100A89952 /* uSockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68DCBEFF2A45D420007DCB50 /* uSockets.a */; };
+		68137F332A52BCB900E6264A /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 68137F322A52BCB900E6264A /* Nimble */; };
+		68137F4C2A52C7F800E6264A /* Arbitrage_Bot_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68137F442A52C7F700E6264A /* Arbitrage_Bot_Demo.framework */; };
+		68137F512A52C7F800E6264A /* Arbitrage_Bot_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68137F502A52C7F800E6264A /* Arbitrage_Bot_DemoTests.swift */; };
+		68137F592A52C80A00E6264A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 68DCBF0A2A45E0B8007DCB50 /* main.c */; };
+		68137F5A2A52C80A00E6264A /* negate_log.c in Sources */ = {isa = PBXBuildFile; fileRef = 6894020C2A4C2B6A0089D4AA /* negate_log.c */; };
+		68137F5B2A52C89400E6264A /* Arbitrage_Bot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F6FC692A459DA500E828DB /* Arbitrage_Bot.framework */; };
+		68137F5C2A52C89400E6264A /* Arbitrage_Bot.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68F6FC692A459DA500E828DB /* Arbitrage_Bot.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		68137F672A52C8C400E6264A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 68137F662A52C8C400E6264A /* main.c */; };
+		68137F6B2A52C8CC00E6264A /* Arbitrage_Bot_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68137F442A52C7F700E6264A /* Arbitrage_Bot_Demo.framework */; };
+		68137F6C2A52C8CC00E6264A /* Arbitrage_Bot_Demo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68137F442A52C7F700E6264A /* Arbitrage_Bot_Demo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		68137F722A52EA6E00E6264A /* BuilderStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68137F712A52EA6E00E6264A /* BuilderStep.swift */; };
+		68137F742A52F2D900E6264A /* OptimalPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68137F732A52F2D900E6264A /* OptimalPrice.swift */; };
+		68137F762A52FC7100E6264A /* ArbitrageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68137F752A52FC7100E6264A /* ArbitrageBuilder.swift */; };
+		68137F782A53106400E6264A /* ProcessOpportunities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68137F772A53106400E6264A /* ProcessOpportunities.swift */; };
+		68137F7D2A53347600E6264A /* PriceCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68137F7C2A53347600E6264A /* PriceCalculation.swift */; };
+		681BE3062A795BD0006BBE6F /* UniswapV3Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681BE3052A795BD0006BBE6F /* UniswapV3Router.swift */; };
+		6842921C2A45A1120043EF2F /* Euler in Frameworks */ = {isa = PBXBuildFile; productRef = 6842921B2A45A1120043EF2F /* Euler */; };
+		6842921E2A45A1A20043EF2F /* ArbitragerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6842921D2A45A1A20043EF2F /* ArbitragerInterface.swift */; };
+		684292292A45AAA70043EF2F /* FastSockets.h in Headers */ = {isa = PBXBuildFile; fileRef = 684292282A45AAA70043EF2F /* FastSockets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6842922F2A45AAE40043EF2F /* libuwebsockets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6842922D2A45AAE40043EF2F /* libuwebsockets.cpp */; };
+		684301782A79583F00CAA17C /* UniswapV3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684301772A79583F00CAA17C /* UniswapV3.swift */; };
+		684EE4AF2A5438E2001E793F /* Cash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684EE4AE2A5438E2001E793F /* Cash.swift */; };
+		685184D22A7A479A0082A67E /* ERC721.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685184D12A7A479A0082A67E /* ERC721.swift */; };
+		68518EE02A52A5DB00E22676 /* EthereumPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518E8F2A52A5D700E22676 /* EthereumPublicKey.swift */; };
+		68518EE12A52A5DB00E22676 /* EthereumAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518E902A52A5D700E22676 /* EthereumAddress.swift */; };
+		68518EE22A52A5DB00E22676 /* EthereumPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518E912A52A5D700E22676 /* EthereumPrivateKey.swift */; };
+		68518EE32A52A5DB00E22676 /* EthereumTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518E922A52A5D700E22676 /* EthereumTransaction.swift */; };
+		68518EE42A52A5DB00E22676 /* Web3Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518E942A52A5D700E22676 /* Web3Provider.swift */; };
+		68518EE52A52A5DB00E22676 /* Web3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518E962A52A5D700E22676 /* Web3.swift */; };
+		68518EE62A52A5DB00E22676 /* RLPItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518E982A52A5D700E22676 /* RLPItem.swift */; };
+		68518EE72A52A5DB00E22676 /* RLPEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518E992A52A5D700E22676 /* RLPEncoder.swift */; };
+		68518EE82A52A5DB00E22676 /* RLPItemConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518E9A2A52A5D700E22676 /* RLPItemConvertible.swift */; };
+		68518EE92A52A5DB00E22676 /* RLPDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518E9B2A52A5D700E22676 /* RLPDecoder.swift */; };
+		68518EEA2A52A5DB00E22676 /* Types+RLPItemConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518E9C2A52A5D700E22676 /* Types+RLPItemConvertible.swift */; };
+		68518EEB2A52A5DB00E22676 /* EthereumBlockObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518E9E2A52A5D700E22676 /* EthereumBlockObject.swift */; };
+		68518EEC2A52A5DB00E22676 /* EthereumTransactionReceiptObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518E9F2A52A5D700E22676 /* EthereumTransactionReceiptObject.swift */; };
+		68518EED2A52A5DB00E22676 /* EthereumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EA02A52A5D700E22676 /* EthereumData.swift */; };
+		68518EEE2A52A5DB00E22676 /* RPCRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EA12A52A5D700E22676 /* RPCRequest.swift */; };
+		68518EEF2A52A5DB00E22676 /* EthereumSyncStatusObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EA22A52A5D700E22676 /* EthereumSyncStatusObject.swift */; };
+		68518EF02A52A5DB00E22676 /* EthereumValueConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EA32A52A5D700E22676 /* EthereumValueConvertible.swift */; };
+		68518EF12A52A5DB00E22676 /* EthereumQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EA42A52A5D700E22676 /* EthereumQuantity.swift */; };
+		68518EF22A52A5DB00E22676 /* EthereumTransactionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EA52A52A5D700E22676 /* EthereumTransactionObject.swift */; };
+		68518EF32A52A5DB00E22676 /* EthereumValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EA62A52A5D700E22676 /* EthereumValue.swift */; };
+		68518EF42A52A5DB00E22676 /* RPCResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EA72A52A5D700E22676 /* RPCResponse.swift */; };
+		68518EF52A52A5DB00E22676 /* EthereumCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EA82A52A5D700E22676 /* EthereumCall.swift */; };
+		68518EF62A52A5DB00E22676 /* EthereumQuantityTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EA92A52A5D700E22676 /* EthereumQuantityTag.swift */; };
+		68518EF72A52A5DB00E22676 /* Types+EthereumValueConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EAA2A52A5D700E22676 /* Types+EthereumValueConvertible.swift */; };
+		68518EF82A52A5DB00E22676 /* EthereumLogObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EAB2A52A5D700E22676 /* EthereumLogObject.swift */; };
+		68518EF92A52A5DB00E22676 /* String+BytesConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EAD2A52A5D700E22676 /* String+BytesConvertible.swift */; };
+		68518EFA2A52A5DB00E22676 /* Bytes+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EAE2A52A5D700E22676 /* Bytes+HexString.swift */; };
+		68518EFB2A52A5DB00E22676 /* UInt+BytesRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EAF2A52A5D700E22676 /* UInt+BytesRepresentable.swift */; };
+		68518EFC2A52A5DB00E22676 /* Bytes+TrimLeadingZeros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EB02A52A5D700E22676 /* Bytes+TrimLeadingZeros.swift */; };
+		68518EFD2A52A5DB00E22676 /* Bytes+SecureRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EB12A52A5D700E22676 /* Bytes+SecureRandom.swift */; };
+		68518EFE2A52A5DB00E22676 /* EthereumUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EB22A52A5D700E22676 /* EthereumUtils.swift */; };
+		68518EFF2A52A5DB00E22676 /* String+HexBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EB32A52A5D700E22676 /* String+HexBytes.swift */; };
+		68518F002A52A5DB00E22676 /* BytesConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EB42A52A5D700E22676 /* BytesConvertible.swift */; };
+		68518F012A52A5DB00E22676 /* String+Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EB52A52A5D700E22676 /* String+Conversion.swift */; };
+		68518F022A52A5DB00E22676 /* Data+BytesConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EB62A52A5D700E22676 /* Data+BytesConvertible.swift */; };
+		68518F032A52A5DB00E22676 /* CharacterSet+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EB72A52A5D700E22676 /* CharacterSet+Hex.swift */; };
+		68518F042A52A5DB00E22676 /* BigUInt+BytesConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EB82A52A5D700E22676 /* BigUInt+BytesConvertible.swift */; };
+		68518F052A52A5DB00E22676 /* Bytes+UInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EB92A52A5D700E22676 /* Bytes+UInt.swift */; };
+		68518F062A52A5DB00E22676 /* Exports+Web3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EBA2A52A5D700E22676 /* Exports+Web3.swift */; };
+		68518F072A52A5DB00E22676 /* Int+ETH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EBB2A52A5D700E22676 /* Int+ETH.swift */; };
+		68518F082A52A5DB00E22676 /* SynchronizedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EBC2A52A5D700E22676 /* SynchronizedArray.swift */; };
+		68518F092A52A5DB00E22676 /* UnsignedInteger+BytesConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EBD2A52A5D700E22676 /* UnsignedInteger+BytesConvertible.swift */; };
+		68518F0A2A52A5DB00E22676 /* SynchronizedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EBE2A52A5D700E22676 /* SynchronizedDictionary.swift */; };
+		68518F0B2A52A5DB00E22676 /* Secp256k1+CTXCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EBF2A52A5D700E22676 /* Secp256k1+CTXCreator.swift */; };
+		68518F0C2A52A5DB00E22676 /* UnsignedInteger+Shifting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EC02A52A5D700E22676 /* UnsignedInteger+Shifting.swift */; };
+		68518F0E2A52A5DB00E22676 /* Web3+WebSocketInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EC32A52A5D800E22676 /* Web3+WebSocketInitializer.swift */; };
+		68518F0F2A52A5DB00E22676 /* Web3+HTTPInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EC42A52A5D800E22676 /* Web3+HTTPInitializer.swift */; };
+		68518F102A52A5DB00E22676 /* Web3HttpProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EC52A52A5D800E22676 /* Web3HttpProvider.swift */; };
+		68518F112A52A5DB00E22676 /* Eth+Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EC82A52A5DA00E22676 /* Eth+Contract.swift */; };
+		68518F122A52A5DB00E22676 /* SolidityEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EC92A52A5DA00E22676 /* SolidityEvent.swift */; };
+		68518F132A52A5DB00E22676 /* ABIObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518ECA2A52A5DA00E22676 /* ABIObject.swift */; };
+		68518F142A52A5DB00E22676 /* ERC20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518ECB2A52A5DA00E22676 /* ERC20.swift */; };
+		68518F162A52A5DB00E22676 /* ERC165.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518ECD2A52A5DA00E22676 /* ERC165.swift */; };
+		68518F172A52A5DB00E22676 /* SolidityFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518ECE2A52A5DA00E22676 /* SolidityFunction.swift */; };
+		68518F182A52A5DB00E22676 /* EthereumContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518ECF2A52A5DA00E22676 /* EthereumContract.swift */; };
+		68518F192A52A5DB00E22676 /* SolidityInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518ED02A52A5DA00E22676 /* SolidityInvocation.swift */; };
+		68518F1A2A52A5DB00E22676 /* Eth+ABI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518ED22A52A5DA00E22676 /* Eth+ABI.swift */; };
+		68518F1B2A52A5DB00E22676 /* ABIEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518ED32A52A5DA00E22676 /* ABIEncoder.swift */; };
+		68518F1C2A52A5DB00E22676 /* ABIDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518ED42A52A5DA00E22676 /* ABIDecoder.swift */; };
+		68518F1D2A52A5DB00E22676 /* SolidityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518ED52A52A5DA00E22676 /* SolidityType.swift */; };
+		68518F1E2A52A5DB00E22676 /* SolidityType+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518ED62A52A5DA00E22676 /* SolidityType+Codable.swift */; };
+		68518F1F2A52A5DB00E22676 /* SolidityWrappedValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518ED72A52A5DA00E22676 /* SolidityWrappedValue.swift */; };
+		68518F202A52A5DB00E22676 /* ABI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518ED82A52A5DA00E22676 /* ABI.swift */; };
+		68518F212A52A5DB00E22676 /* SolidityTuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518ED92A52A5DA00E22676 /* SolidityTuple.swift */; };
+		68518F222A52A5DB00E22676 /* ABIConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EDA2A52A5DA00E22676 /* ABIConvertible.swift */; };
+		68518F232A52A5DB00E22676 /* Web3+PromiseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EDC2A52A5DB00E22676 /* Web3+PromiseKit.swift */; };
+		68518F262A52A5DB00E22676 /* ContractPromiseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68518EDF2A52A5DB00E22676 /* ContractPromiseExtensions.swift */; };
+		68518F292A52B6A800E22676 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 68518F282A52B6A800E22676 /* CryptoSwift */; };
+		68518F2C2A52B6E400E22676 /* BigInt in Frameworks */ = {isa = PBXBuildFile; productRef = 68518F2B2A52B6E400E22676 /* BigInt */; };
+		68518F2F2A52B76100E22676 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 68518F2E2A52B76100E22676 /* Collections */; };
+		68518F8C2A52BC8000E22676 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 68518F8B2A52BC8000E22676 /* Quick */; };
+		6861380F2A6EADB600805C54 /* Web3WebSocketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6861380E2A6EADB600805C54 /* Web3WebSocketProvider.swift */; };
+		686138122A6EADFB00805C54 /* WebSocketKit in Frameworks */ = {isa = PBXBuildFile; productRef = 686138112A6EADFB00805C54 /* WebSocketKit */; };
+		6862A45C2A56A24C002E825B /* SwapRouteCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6862A45B2A56A24C002E825B /* SwapRouteCoordinator.swift */; };
+		68832F362A47531300607523 /* libusockets.h in Headers */ = {isa = PBXBuildFile; fileRef = 68832F352A4752D400607523 /* libusockets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68A6F8FA2A544B9400CC9779 /* AGGRenderer in Frameworks */ = {isa = PBXBuildFile; productRef = 68A6F8F92A544B9400CC9779 /* AGGRenderer */; };
+		68A6F8FC2A544B9400CC9779 /* SwiftPlot in Frameworks */ = {isa = PBXBuildFile; productRef = 68A6F8FB2A544B9400CC9779 /* SwiftPlot */; };
+		68A6F9022A547D4400CC9779 /* SwiftPlot in Frameworks */ = {isa = PBXBuildFile; productRef = 68A6F9012A547D4400CC9779 /* SwiftPlot */; };
+		68A6F9082A54880B00CC9779 /* SVGRenderer in Frameworks */ = {isa = PBXBuildFile; productRef = 68A6F9072A54880B00CC9779 /* SVGRenderer */; };
+		68A8BB6A2A5EE9BA00FCB139 /* Trade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A8BB692A5EE9BA00FCB139 /* Trade.swift */; };
+		68A8BB6D2A5FF42200FCB139 /* Arbitrage_Bot_Demo.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A8BB6C2A5FF3EE00FCB139 /* Arbitrage_Bot_Demo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68DCBF032A45DEC3007DCB50 /* libuwebsockets.h in Headers */ = {isa = PBXBuildFile; fileRef = 6842922E2A45AAE40043EF2F /* libuwebsockets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68DCBF0F2A45E710007DCB50 /* FastSockets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684292262A45AAA60043EF2F /* FastSockets.framework */; };
+		68DCBF102A45E710007DCB50 /* FastSockets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 684292262A45AAA60043EF2F /* FastSockets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		68ED7B0C2A692C4300A656FC /* secp256k1 in Frameworks */ = {isa = PBXBuildFile; productRef = 68ED7B0B2A692C4300A656FC /* secp256k1 */; };
+		68ED7B112A6952ED00A656FC /* arbitrager.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F6FCC32A459E8800E828DB /* arbitrager.m */; };
+		68ED7B122A6952EF00A656FC /* arbitrager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6842921F2A45A9180043EF2F /* arbitrager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68F342382A4D8DCF002AC4B8 /* XCTest+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F342372A4D8DCF002AC4B8 /* XCTest+Utils.swift */; };
+		68F6FC6E2A459DA500E828DB /* Arbitrage_Bot.docc in Sources */ = {isa = PBXBuildFile; fileRef = 68F6FC6D2A459DA500E828DB /* Arbitrage_Bot.docc */; };
+		68F6FC742A459DA500E828DB /* Arbitrage_Bot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F6FC692A459DA500E828DB /* Arbitrage_Bot.framework */; };
+		68F6FC792A459DA500E828DB /* CycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F6FC782A459DA500E828DB /* CycleTests.swift */; };
+		68F6FC7A2A459DA500E828DB /* Arbitrage_Bot.h in Headers */ = {isa = PBXBuildFile; fileRef = 68F6FC6C2A459DA500E828DB /* Arbitrage_Bot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68F6FCD02A45A0C100E828DB /* OpenCombine in Frameworks */ = {isa = PBXBuildFile; productRef = 68F6FCCF2A45A0C100E828DB /* OpenCombine */; };
+		68F6FCD22A45A0C100E828DB /* OpenCombineDispatch in Frameworks */ = {isa = PBXBuildFile; productRef = 68F6FCD12A45A0C100E828DB /* OpenCombineDispatch */; };
+		68F6FCD42A45A0C100E828DB /* OpenCombineFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 68F6FCD32A45A0C100E828DB /* OpenCombineFoundation */; };
+		68FCE1FB2A4EDA18009B79ED /* RealtimeServerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1D02A4EDA17009B79ED /* RealtimeServerController.swift */; };
+		68FCE1FC2A4EDA18009B79ED /* UniswapV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1D22A4EDA17009B79ED /* UniswapV2.swift */; };
+		68FCE1FD2A4EDA18009B79ED /* PriceDataSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1D42A4EDA17009B79ED /* PriceDataSubscription.swift */; };
+		68FCE1FE2A4EDA18009B79ED /* PriceDataSubscriptionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1D52A4EDA17009B79ED /* PriceDataSubscriptionType.swift */; };
+		68FCE1FF2A4EDA18009B79ED /* PriceDataSubscriptionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1D62A4EDA17009B79ED /* PriceDataSubscriptionState.swift */; };
+		68FCE2002A4EDA18009B79ED /* PriceDataPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1D82A4EDA17009B79ED /* PriceDataPublisher.swift */; };
+		68FCE2012A4EDA18009B79ED /* PriceDataSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1DA2A4EDA17009B79ED /* PriceDataSubscriber.swift */; };
+		68FCE2022A4EDA18009B79ED /* Array+Uint8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1DC2A4EDA17009B79ED /* Array+Uint8.swift */; };
+		68FCE2032A4EDA18009B79ED /* AnyDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1DE2A4EDA17009B79ED /* AnyDecodable.swift */; };
+		68FCE2042A4EDA18009B79ED /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1DF2A4EDA17009B79ED /* AnyCodable.swift */; };
+		68FCE2052A4EDA18009B79ED /* AnyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1E02A4EDA17009B79ED /* AnyEncodable.swift */; };
+		68FCE2062A4EDA18009B79ED /* BigInt+Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1E12A4EDA17009B79ED /* BigInt+Typealias.swift */; };
+		68FCE2072A4EDA18009B79ED /* EthereumAddress+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1E22A4EDA17009B79ED /* EthereumAddress+Utils.swift */; };
+		68FCE2082A4EDA18009B79ED /* BigUInt+Euler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1E32A4EDA17009B79ED /* BigUInt+Euler.swift */; };
+		68FCE2092A4EDA18009B79ED /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1E62A4EDA17009B79ED /* Quote.swift */; };
+		68FCE20A2A4EDA18009B79ED /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1E72A4EDA17009B79ED /* Token.swift */; };
+		68FCE20B2A4EDA18009B79ED /* Exchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1E82A4EDA17009B79ED /* Exchange.swift */; };
+		68FCE20C2A4EDA18009B79ED /* UniswapV2Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1EA2A4EDA17009B79ED /* UniswapV2Router.swift */; };
+		68FCE20D2A4EDA18009B79ED /* UniswapV2Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1EB2A4EDA17009B79ED /* UniswapV2Pair.swift */; };
+		68FCE20E2A4EDA18009B79ED /* BotResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1ED2A4EDA17009B79ED /* BotResponse.swift */; };
+		68FCE20F2A4EDA18009B79ED /* BotRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1EE2A4EDA17009B79ED /* BotRequest.swift */; };
+		68FCE2102A4EDA18009B79ED /* BotTopics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1EF2A4EDA17009B79ED /* BotTopics.swift */; };
+		68FCE2112A4EDA18009B79ED /* AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1F12A4EDA17009B79ED /* AdjacencyList.swift */; };
+		68FCE2122A4EDA18009B79ED /* PriceDataStoreWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1F22A4EDA17009B79ED /* PriceDataStoreWrapper.swift */; };
+		68FCE2132A4EDA18009B79ED /* ReserveFeeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1F42A4EDA17009B79ED /* ReserveFeeInfo.swift */; };
+		68FCE2152A4EDA18009B79ED /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1F72A4EDA17009B79ED /* Environment.swift */; };
+		68FCE2162A4EDA18009B79ED /* Pairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1F82A4EDA17009B79ED /* Pairs.swift */; };
+		68FCE2172A4EDA18009B79ED /* Exchanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1F92A4EDA17009B79ED /* Exchanges.swift */; };
+		68FCE2182A4EDA18009B79ED /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCE1FA2A4EDA17009B79ED /* Credentials.swift */; };
+		68FE7D492A4B067500D3A706 /* CollectionConcurrencyKit in Frameworks */ = {isa = PBXBuildFile; productRef = 68FE7D482A4B067500D3A706 /* CollectionConcurrencyKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68137F4D2A52C7F800E6264A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68F6FC602A459DA500E828DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68137F432A52C7F700E6264A;
+			remoteInfo = "Arbitrage Bot Demo";
+		};
+		68137F5D2A52C89400E6264A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68F6FC602A459DA500E828DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68F6FC682A459DA500E828DB;
+			remoteInfo = "Arbitrage Bot";
+		};
+		68137F6D2A52C8CC00E6264A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68F6FC602A459DA500E828DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68137F432A52C7F700E6264A;
+			remoteInfo = "Arbitrage Bot Demo";
+		};
+		68DCBF112A45E710007DCB50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68F6FC602A459DA500E828DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 684292252A45AAA60043EF2F;
+			remoteInfo = FastSockets;
+		};
+		68F6FC752A459DA500E828DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68F6FC602A459DA500E828DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68F6FC682A459DA500E828DB;
+			remoteInfo = "Arbitrage-Bot";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		68137F5F2A52C89400E6264A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				68137F5C2A52C89400E6264A /* Arbitrage_Bot.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68137F622A52C8C400E6264A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		68137F6F2A52C8CC00E6264A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				68137F6C2A52C8CC00E6264A /* Arbitrage_Bot_Demo.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68DCBF132A45E711007DCB50 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				68DCBF102A45E710007DCB50 /* FastSockets.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		68017B3F2A570FBD00837B89 /* DecisionSubscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionSubscriber.swift; sourceTree = "<group>"; };
+		68017B432A57101400837B89 /* DecisionDataPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionDataPublisher.swift; sourceTree = "<group>"; };
+		68017B462A57117600837B89 /* ArbitrageSwapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArbitrageSwapCoordinator.swift; sourceTree = "<group>"; };
+		68137F442A52C7F700E6264A /* Arbitrage_Bot_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Arbitrage_Bot_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68137F462A52C7F700E6264A /* Arbitrage_Bot_Main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Arbitrage_Bot_Main.h; sourceTree = "<group>"; };
+		68137F4B2A52C7F700E6264A /* Arbitrage Bot DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arbitrage Bot DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68137F502A52C7F800E6264A /* Arbitrage_Bot_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arbitrage_Bot_DemoTests.swift; sourceTree = "<group>"; };
+		68137F642A52C8C400E6264A /* Arbitrage-Bot-Main */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Arbitrage-Bot-Main"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68137F662A52C8C400E6264A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		68137F712A52EA6E00E6264A /* BuilderStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderStep.swift; sourceTree = "<group>"; };
+		68137F732A52F2D900E6264A /* OptimalPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimalPrice.swift; sourceTree = "<group>"; };
+		68137F752A52FC7100E6264A /* ArbitrageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArbitrageBuilder.swift; sourceTree = "<group>"; };
+		68137F772A53106400E6264A /* ProcessOpportunities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessOpportunities.swift; sourceTree = "<group>"; };
+		68137F7C2A53347600E6264A /* PriceCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCalculation.swift; sourceTree = "<group>"; };
+		681BE3052A795BD0006BBE6F /* UniswapV3Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniswapV3Router.swift; sourceTree = "<group>"; };
+		6842921D2A45A1A20043EF2F /* ArbitragerInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArbitragerInterface.swift; sourceTree = "<group>"; };
+		6842921F2A45A9180043EF2F /* arbitrager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arbitrager.h; sourceTree = "<group>"; };
+		684292262A45AAA60043EF2F /* FastSockets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FastSockets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		684292282A45AAA70043EF2F /* FastSockets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastSockets.h; sourceTree = "<group>"; };
+		6842922D2A45AAE40043EF2F /* libuwebsockets.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = libuwebsockets.cpp; sourceTree = "<group>"; };
+		6842922E2A45AAE40043EF2F /* libuwebsockets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libuwebsockets.h; sourceTree = "<group>"; };
+		684301772A79583F00CAA17C /* UniswapV3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniswapV3.swift; sourceTree = "<group>"; };
+		684EE4AE2A5438E2001E793F /* Cash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cash.swift; sourceTree = "<group>"; };
+		685184D12A7A479A0082A67E /* ERC721.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ERC721.swift; sourceTree = "<group>"; };
+		68518E8F2A52A5D700E22676 /* EthereumPublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumPublicKey.swift; sourceTree = "<group>"; };
+		68518E902A52A5D700E22676 /* EthereumAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumAddress.swift; sourceTree = "<group>"; };
+		68518E912A52A5D700E22676 /* EthereumPrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumPrivateKey.swift; sourceTree = "<group>"; };
+		68518E922A52A5D700E22676 /* EthereumTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumTransaction.swift; sourceTree = "<group>"; };
+		68518E942A52A5D700E22676 /* Web3Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Web3Provider.swift; sourceTree = "<group>"; };
+		68518E962A52A5D700E22676 /* Web3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Web3.swift; sourceTree = "<group>"; };
+		68518E982A52A5D700E22676 /* RLPItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLPItem.swift; sourceTree = "<group>"; };
+		68518E992A52A5D700E22676 /* RLPEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLPEncoder.swift; sourceTree = "<group>"; };
+		68518E9A2A52A5D700E22676 /* RLPItemConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLPItemConvertible.swift; sourceTree = "<group>"; };
+		68518E9B2A52A5D700E22676 /* RLPDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLPDecoder.swift; sourceTree = "<group>"; };
+		68518E9C2A52A5D700E22676 /* Types+RLPItemConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Types+RLPItemConvertible.swift"; sourceTree = "<group>"; };
+		68518E9E2A52A5D700E22676 /* EthereumBlockObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumBlockObject.swift; sourceTree = "<group>"; };
+		68518E9F2A52A5D700E22676 /* EthereumTransactionReceiptObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumTransactionReceiptObject.swift; sourceTree = "<group>"; };
+		68518EA02A52A5D700E22676 /* EthereumData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumData.swift; sourceTree = "<group>"; };
+		68518EA12A52A5D700E22676 /* RPCRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPCRequest.swift; sourceTree = "<group>"; };
+		68518EA22A52A5D700E22676 /* EthereumSyncStatusObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumSyncStatusObject.swift; sourceTree = "<group>"; };
+		68518EA32A52A5D700E22676 /* EthereumValueConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumValueConvertible.swift; sourceTree = "<group>"; };
+		68518EA42A52A5D700E22676 /* EthereumQuantity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumQuantity.swift; sourceTree = "<group>"; };
+		68518EA52A52A5D700E22676 /* EthereumTransactionObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumTransactionObject.swift; sourceTree = "<group>"; };
+		68518EA62A52A5D700E22676 /* EthereumValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumValue.swift; sourceTree = "<group>"; };
+		68518EA72A52A5D700E22676 /* RPCResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPCResponse.swift; sourceTree = "<group>"; };
+		68518EA82A52A5D700E22676 /* EthereumCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumCall.swift; sourceTree = "<group>"; };
+		68518EA92A52A5D700E22676 /* EthereumQuantityTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumQuantityTag.swift; sourceTree = "<group>"; };
+		68518EAA2A52A5D700E22676 /* Types+EthereumValueConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Types+EthereumValueConvertible.swift"; sourceTree = "<group>"; };
+		68518EAB2A52A5D700E22676 /* EthereumLogObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumLogObject.swift; sourceTree = "<group>"; };
+		68518EAD2A52A5D700E22676 /* String+BytesConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+BytesConvertible.swift"; sourceTree = "<group>"; };
+		68518EAE2A52A5D700E22676 /* Bytes+HexString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bytes+HexString.swift"; sourceTree = "<group>"; };
+		68518EAF2A52A5D700E22676 /* UInt+BytesRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UInt+BytesRepresentable.swift"; sourceTree = "<group>"; };
+		68518EB02A52A5D700E22676 /* Bytes+TrimLeadingZeros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bytes+TrimLeadingZeros.swift"; sourceTree = "<group>"; };
+		68518EB12A52A5D700E22676 /* Bytes+SecureRandom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bytes+SecureRandom.swift"; sourceTree = "<group>"; };
+		68518EB22A52A5D700E22676 /* EthereumUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumUtils.swift; sourceTree = "<group>"; };
+		68518EB32A52A5D700E22676 /* String+HexBytes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+HexBytes.swift"; sourceTree = "<group>"; };
+		68518EB42A52A5D700E22676 /* BytesConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BytesConvertible.swift; sourceTree = "<group>"; };
+		68518EB52A52A5D700E22676 /* String+Conversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Conversion.swift"; sourceTree = "<group>"; };
+		68518EB62A52A5D700E22676 /* Data+BytesConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+BytesConvertible.swift"; sourceTree = "<group>"; };
+		68518EB72A52A5D700E22676 /* CharacterSet+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CharacterSet+Hex.swift"; sourceTree = "<group>"; };
+		68518EB82A52A5D700E22676 /* BigUInt+BytesConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BigUInt+BytesConvertible.swift"; sourceTree = "<group>"; };
+		68518EB92A52A5D700E22676 /* Bytes+UInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bytes+UInt.swift"; sourceTree = "<group>"; };
+		68518EBA2A52A5D700E22676 /* Exports+Web3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Exports+Web3.swift"; sourceTree = "<group>"; };
+		68518EBB2A52A5D700E22676 /* Int+ETH.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+ETH.swift"; sourceTree = "<group>"; };
+		68518EBC2A52A5D700E22676 /* SynchronizedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedArray.swift; sourceTree = "<group>"; };
+		68518EBD2A52A5D700E22676 /* UnsignedInteger+BytesConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UnsignedInteger+BytesConvertible.swift"; sourceTree = "<group>"; };
+		68518EBE2A52A5D700E22676 /* SynchronizedDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedDictionary.swift; sourceTree = "<group>"; };
+		68518EBF2A52A5D700E22676 /* Secp256k1+CTXCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Secp256k1+CTXCreator.swift"; sourceTree = "<group>"; };
+		68518EC02A52A5D700E22676 /* UnsignedInteger+Shifting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UnsignedInteger+Shifting.swift"; sourceTree = "<group>"; };
+		68518EC32A52A5D800E22676 /* Web3+WebSocketInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Web3+WebSocketInitializer.swift"; sourceTree = "<group>"; };
+		68518EC42A52A5D800E22676 /* Web3+HTTPInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Web3+HTTPInitializer.swift"; sourceTree = "<group>"; };
+		68518EC52A52A5D800E22676 /* Web3HttpProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Web3HttpProvider.swift; sourceTree = "<group>"; };
+		68518EC82A52A5DA00E22676 /* Eth+Contract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Eth+Contract.swift"; sourceTree = "<group>"; };
+		68518EC92A52A5DA00E22676 /* SolidityEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolidityEvent.swift; sourceTree = "<group>"; };
+		68518ECA2A52A5DA00E22676 /* ABIObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABIObject.swift; sourceTree = "<group>"; };
+		68518ECB2A52A5DA00E22676 /* ERC20.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ERC20.swift; sourceTree = "<group>"; };
+		68518ECD2A52A5DA00E22676 /* ERC165.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ERC165.swift; sourceTree = "<group>"; };
+		68518ECE2A52A5DA00E22676 /* SolidityFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolidityFunction.swift; sourceTree = "<group>"; };
+		68518ECF2A52A5DA00E22676 /* EthereumContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumContract.swift; sourceTree = "<group>"; };
+		68518ED02A52A5DA00E22676 /* SolidityInvocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolidityInvocation.swift; sourceTree = "<group>"; };
+		68518ED22A52A5DA00E22676 /* Eth+ABI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Eth+ABI.swift"; sourceTree = "<group>"; };
+		68518ED32A52A5DA00E22676 /* ABIEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABIEncoder.swift; sourceTree = "<group>"; };
+		68518ED42A52A5DA00E22676 /* ABIDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABIDecoder.swift; sourceTree = "<group>"; };
+		68518ED52A52A5DA00E22676 /* SolidityType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolidityType.swift; sourceTree = "<group>"; };
+		68518ED62A52A5DA00E22676 /* SolidityType+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SolidityType+Codable.swift"; sourceTree = "<group>"; };
+		68518ED72A52A5DA00E22676 /* SolidityWrappedValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolidityWrappedValue.swift; sourceTree = "<group>"; };
+		68518ED82A52A5DA00E22676 /* ABI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABI.swift; sourceTree = "<group>"; };
+		68518ED92A52A5DA00E22676 /* SolidityTuple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolidityTuple.swift; sourceTree = "<group>"; };
+		68518EDA2A52A5DA00E22676 /* ABIConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABIConvertible.swift; sourceTree = "<group>"; };
+		68518EDC2A52A5DB00E22676 /* Web3+PromiseKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Web3+PromiseKit.swift"; sourceTree = "<group>"; };
+		68518EDF2A52A5DB00E22676 /* ContractPromiseExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContractPromiseExtensions.swift; sourceTree = "<group>"; };
+		6861380E2A6EADB600805C54 /* Web3WebSocketProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3WebSocketProvider.swift; sourceTree = "<group>"; };
+		6862A45B2A56A24C002E825B /* SwapRouteCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapRouteCoordinator.swift; sourceTree = "<group>"; };
+		68832F352A4752D400607523 /* libusockets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libusockets.h; sourceTree = "<group>"; };
+		6894020B2A4C2B6A0089D4AA /* negate_log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = negate_log.h; sourceTree = "<group>"; };
+		6894020C2A4C2B6A0089D4AA /* negate_log.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = negate_log.c; sourceTree = "<group>"; };
+		68A6F8FD2A545FC900CC9779 /* VisualGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualGraph.swift; sourceTree = "<group>"; };
+		68A8BB692A5EE9BA00FCB139 /* Trade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trade.swift; sourceTree = "<group>"; };
+		68A8BB6C2A5FF3EE00FCB139 /* Arbitrage_Bot_Demo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Arbitrage_Bot_Demo.h; sourceTree = "<group>"; };
+		68DCBEFF2A45D420007DCB50 /* uSockets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = uSockets.a; path = FastSockets/uWebSockets/uSockets/uSockets.a; sourceTree = "<group>"; };
+		68DCBF0A2A45E0B8007DCB50 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		68DCBF192A45EAF6007DCB50 /* Arbitrage Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Arbitrage Demo.entitlements"; sourceTree = "<group>"; };
+		68ED7B0D2A6931ED00A656FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		68ED7B132A6976E400A656FC /* Aggregator-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Aggregator-Swift.h"; sourceTree = "<group>"; };
+		68F342372A4D8DCF002AC4B8 /* XCTest+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+Utils.swift"; sourceTree = "<group>"; };
+		68F6FC692A459DA500E828DB /* Arbitrage_Bot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Arbitrage_Bot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68F6FC6C2A459DA500E828DB /* Arbitrage_Bot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Arbitrage_Bot.h; sourceTree = "<group>"; };
+		68F6FC6D2A459DA500E828DB /* Arbitrage_Bot.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Arbitrage_Bot.docc; sourceTree = "<group>"; };
+		68F6FC732A459DA500E828DB /* Arbitrage-BotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arbitrage-BotTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68F6FC782A459DA500E828DB /* CycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleTests.swift; sourceTree = "<group>"; };
+		68F6FCC32A459E8800E828DB /* arbitrager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = arbitrager.m; sourceTree = "<group>"; };
+		68FCE1D02A4EDA17009B79ED /* RealtimeServerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeServerController.swift; sourceTree = "<group>"; };
+		68FCE1D22A4EDA17009B79ED /* UniswapV2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniswapV2.swift; sourceTree = "<group>"; };
+		68FCE1D42A4EDA17009B79ED /* PriceDataSubscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceDataSubscription.swift; sourceTree = "<group>"; };
+		68FCE1D52A4EDA17009B79ED /* PriceDataSubscriptionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceDataSubscriptionType.swift; sourceTree = "<group>"; };
+		68FCE1D62A4EDA17009B79ED /* PriceDataSubscriptionState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceDataSubscriptionState.swift; sourceTree = "<group>"; };
+		68FCE1D82A4EDA17009B79ED /* PriceDataPublisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceDataPublisher.swift; sourceTree = "<group>"; };
+		68FCE1DA2A4EDA17009B79ED /* PriceDataSubscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceDataSubscriber.swift; sourceTree = "<group>"; };
+		68FCE1DC2A4EDA17009B79ED /* Array+Uint8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Uint8.swift"; sourceTree = "<group>"; };
+		68FCE1DE2A4EDA17009B79ED /* AnyDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyDecodable.swift; sourceTree = "<group>"; };
+		68FCE1DF2A4EDA17009B79ED /* AnyCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyCodable.swift; sourceTree = "<group>"; };
+		68FCE1E02A4EDA17009B79ED /* AnyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyEncodable.swift; sourceTree = "<group>"; };
+		68FCE1E12A4EDA17009B79ED /* BigInt+Typealias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BigInt+Typealias.swift"; sourceTree = "<group>"; };
+		68FCE1E22A4EDA17009B79ED /* EthereumAddress+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EthereumAddress+Utils.swift"; sourceTree = "<group>"; };
+		68FCE1E32A4EDA17009B79ED /* BigUInt+Euler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BigUInt+Euler.swift"; sourceTree = "<group>"; };
+		68FCE1E62A4EDA17009B79ED /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		68FCE1E72A4EDA17009B79ED /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		68FCE1E82A4EDA17009B79ED /* Exchange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exchange.swift; sourceTree = "<group>"; };
+		68FCE1EA2A4EDA17009B79ED /* UniswapV2Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniswapV2Router.swift; sourceTree = "<group>"; };
+		68FCE1EB2A4EDA17009B79ED /* UniswapV2Pair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniswapV2Pair.swift; sourceTree = "<group>"; };
+		68FCE1ED2A4EDA17009B79ED /* BotResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BotResponse.swift; sourceTree = "<group>"; };
+		68FCE1EE2A4EDA17009B79ED /* BotRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BotRequest.swift; sourceTree = "<group>"; };
+		68FCE1EF2A4EDA17009B79ED /* BotTopics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BotTopics.swift; sourceTree = "<group>"; };
+		68FCE1F12A4EDA17009B79ED /* AdjacencyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdjacencyList.swift; sourceTree = "<group>"; };
+		68FCE1F22A4EDA17009B79ED /* PriceDataStoreWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceDataStoreWrapper.swift; sourceTree = "<group>"; };
+		68FCE1F42A4EDA17009B79ED /* ReserveFeeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReserveFeeInfo.swift; sourceTree = "<group>"; };
+		68FCE1F72A4EDA17009B79ED /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		68FCE1F82A4EDA17009B79ED /* Pairs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pairs.swift; sourceTree = "<group>"; };
+		68FCE1F92A4EDA17009B79ED /* Exchanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exchanges.swift; sourceTree = "<group>"; };
+		68FCE1FA2A4EDA17009B79ED /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		68FCE2192A4EF59E009B79ED /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		68FCE21E2A4F1865009B79ED /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		68FCE21F2A4F1AD5009B79ED /* FastSocketsPM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastSocketsPM.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68137F412A52C7F700E6264A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68137F5B2A52C89400E6264A /* Arbitrage_Bot.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68137F482A52C7F700E6264A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68137F4C2A52C7F800E6264A /* Arbitrage_Bot_Demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68137F612A52C8C400E6264A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68137F6B2A52C8CC00E6264A /* Arbitrage_Bot_Demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684292232A45AAA60043EF2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6809AFA72A486FB100A89952 /* uSockets.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F6FC662A459DA500E828DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6842921C2A45A1120043EF2F /* Euler in Frameworks */,
+				68ED7B0C2A692C4300A656FC /* secp256k1 in Frameworks */,
+				68A6F9082A54880B00CC9779 /* SVGRenderer in Frameworks */,
+				68A6F9022A547D4400CC9779 /* SwiftPlot in Frameworks */,
+				68F6FCD42A45A0C100E828DB /* OpenCombineFoundation in Frameworks */,
+				68DCBF0F2A45E710007DCB50 /* FastSockets.framework in Frameworks */,
+				68518F2C2A52B6E400E22676 /* BigInt in Frameworks */,
+				686138122A6EADFB00805C54 /* WebSocketKit in Frameworks */,
+				68FE7D492A4B067500D3A706 /* CollectionConcurrencyKit in Frameworks */,
+				68F6FCD22A45A0C100E828DB /* OpenCombineDispatch in Frameworks */,
+				68518F2F2A52B76100E22676 /* Collections in Frameworks */,
+				68F6FCD02A45A0C100E828DB /* OpenCombine in Frameworks */,
+				68518F292A52B6A800E22676 /* CryptoSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F6FC702A459DA500E828DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68137F332A52BCB900E6264A /* Nimble in Frameworks */,
+				68A6F8FA2A544B9400CC9779 /* AGGRenderer in Frameworks */,
+				68A6F8FC2A544B9400CC9779 /* SwiftPlot in Frameworks */,
+				68518F8C2A52BC8000E22676 /* Quick in Frameworks */,
+				68F6FC742A459DA500E828DB /* Arbitrage_Bot.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68017B3D2A570EBB00837B89 /* PriceData */ = {
+			isa = PBXGroup;
+			children = (
+				68FCE1D42A4EDA17009B79ED /* PriceDataSubscription.swift */,
+				68FCE1D52A4EDA17009B79ED /* PriceDataSubscriptionType.swift */,
+				68FCE1D62A4EDA17009B79ED /* PriceDataSubscriptionState.swift */,
+			);
+			path = PriceData;
+			sourceTree = "<group>";
+		};
+		68017B412A570FF800837B89 /* PriceData */ = {
+			isa = PBXGroup;
+			children = (
+				68FCE1D82A4EDA17009B79ED /* PriceDataPublisher.swift */,
+			);
+			path = PriceData;
+			sourceTree = "<group>";
+		};
+		68017B422A57100600837B89 /* Decision */ = {
+			isa = PBXGroup;
+			children = (
+				68017B432A57101400837B89 /* DecisionDataPublisher.swift */,
+			);
+			path = Decision;
+			sourceTree = "<group>";
+		};
+		68017B452A57116200837B89 /* Arbitrage Executor */ = {
+			isa = PBXGroup;
+			children = (
+				68017B462A57117600837B89 /* ArbitrageSwapCoordinator.swift */,
+				68A8BB692A5EE9BA00FCB139 /* Trade.swift */,
+			);
+			path = "Arbitrage Executor";
+			sourceTree = "<group>";
+		};
+		68137F452A52C7F700E6264A /* Arbitrage Bot Demo */ = {
+			isa = PBXGroup;
+			children = (
+				68A8BB6B2A5F438E00FCB139 /* include */,
+				68DCBF0A2A45E0B8007DCB50 /* main.c */,
+				6894020B2A4C2B6A0089D4AA /* negate_log.h */,
+				6894020C2A4C2B6A0089D4AA /* negate_log.c */,
+				68A8BB6C2A5FF3EE00FCB139 /* Arbitrage_Bot_Demo.h */,
+			);
+			path = "Arbitrage Bot Demo";
+			sourceTree = "<group>";
+		};
+		68137F4F2A52C7F800E6264A /* Arbitrage Bot DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				68137F502A52C7F800E6264A /* Arbitrage_Bot_DemoTests.swift */,
+			);
+			path = "Arbitrage Bot DemoTests";
+			sourceTree = "<group>";
+		};
+		68137F652A52C8C400E6264A /* Arbitrage-Bot-Main */ = {
+			isa = PBXGroup;
+			children = (
+				68137F662A52C8C400E6264A /* main.c */,
+			);
+			path = "Arbitrage-Bot-Main";
+			sourceTree = "<group>";
+		};
+		68137F702A52E9C500E6264A /* Arbitrage Builder */ = {
+			isa = PBXGroup;
+			children = (
+				68FCE1F32A4EDA17009B79ED /* Test */,
+				68137F712A52EA6E00E6264A /* BuilderStep.swift */,
+				68137F732A52F2D900E6264A /* OptimalPrice.swift */,
+				68137F752A52FC7100E6264A /* ArbitrageBuilder.swift */,
+				68137F772A53106400E6264A /* ProcessOpportunities.swift */,
+			);
+			path = "Arbitrage Builder";
+			sourceTree = "<group>";
+		};
+		684292272A45AAA70043EF2F /* FastSockets */ = {
+			isa = PBXGroup;
+			children = (
+				6842922D2A45AAE40043EF2F /* libuwebsockets.cpp */,
+				6842922E2A45AAE40043EF2F /* libuwebsockets.h */,
+				68832F352A4752D400607523 /* libusockets.h */,
+				684292282A45AAA70043EF2F /* FastSockets.h */,
+				68FCE21E2A4F1865009B79ED /* module.modulemap */,
+				68FCE21F2A4F1AD5009B79ED /* FastSocketsPM.h */,
+			);
+			path = FastSockets;
+			sourceTree = "<group>";
+		};
+		684EE4AD2A5438D8001E793F /* Cash */ = {
+			isa = PBXGroup;
+			children = (
+				684EE4AE2A5438E2001E793F /* Cash.swift */,
+			);
+			path = Cash;
+			sourceTree = "<group>";
+		};
+		68518E8C2A52A5C800E22676 /* Web3 */ = {
+			isa = PBXGroup;
+			children = (
+				68518EC62A52A5DA00E22676 /* ContractABI */,
+				68518E8D2A52A5D700E22676 /* Core */,
+				68518EC12A52A5D800E22676 /* FoundationHTTP */,
+				68518EDB2A52A5DB00E22676 /* Concurrency */,
+			);
+			path = Web3;
+			sourceTree = "<group>";
+		};
+		68518E8D2A52A5D700E22676 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				68518E8E2A52A5D700E22676 /* Transaction */,
+				68518E932A52A5D700E22676 /* Providers */,
+				68518E952A52A5D700E22676 /* Web3 */,
+				68518E972A52A5D700E22676 /* RLP */,
+				68518E9D2A52A5D700E22676 /* Json */,
+				68518EAC2A52A5D700E22676 /* Toolbox */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		68518E8E2A52A5D700E22676 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				68518E8F2A52A5D700E22676 /* EthereumPublicKey.swift */,
+				68518E902A52A5D700E22676 /* EthereumAddress.swift */,
+				68518E912A52A5D700E22676 /* EthereumPrivateKey.swift */,
+				68518E922A52A5D700E22676 /* EthereumTransaction.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		68518E932A52A5D700E22676 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				68518E942A52A5D700E22676 /* Web3Provider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		68518E952A52A5D700E22676 /* Web3 */ = {
+			isa = PBXGroup;
+			children = (
+				68518E962A52A5D700E22676 /* Web3.swift */,
+			);
+			path = Web3;
+			sourceTree = "<group>";
+		};
+		68518E972A52A5D700E22676 /* RLP */ = {
+			isa = PBXGroup;
+			children = (
+				68518E982A52A5D700E22676 /* RLPItem.swift */,
+				68518E992A52A5D700E22676 /* RLPEncoder.swift */,
+				68518E9A2A52A5D700E22676 /* RLPItemConvertible.swift */,
+				68518E9B2A52A5D700E22676 /* RLPDecoder.swift */,
+				68518E9C2A52A5D700E22676 /* Types+RLPItemConvertible.swift */,
+			);
+			path = RLP;
+			sourceTree = "<group>";
+		};
+		68518E9D2A52A5D700E22676 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				68518E9E2A52A5D700E22676 /* EthereumBlockObject.swift */,
+				68518E9F2A52A5D700E22676 /* EthereumTransactionReceiptObject.swift */,
+				68518EA02A52A5D700E22676 /* EthereumData.swift */,
+				68518EA12A52A5D700E22676 /* RPCRequest.swift */,
+				68518EA22A52A5D700E22676 /* EthereumSyncStatusObject.swift */,
+				68518EA32A52A5D700E22676 /* EthereumValueConvertible.swift */,
+				68518EA42A52A5D700E22676 /* EthereumQuantity.swift */,
+				68518EA52A52A5D700E22676 /* EthereumTransactionObject.swift */,
+				68518EA62A52A5D700E22676 /* EthereumValue.swift */,
+				68518EA72A52A5D700E22676 /* RPCResponse.swift */,
+				68518EA82A52A5D700E22676 /* EthereumCall.swift */,
+				68518EA92A52A5D700E22676 /* EthereumQuantityTag.swift */,
+				68518EAA2A52A5D700E22676 /* Types+EthereumValueConvertible.swift */,
+				68518EAB2A52A5D700E22676 /* EthereumLogObject.swift */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		68518EAC2A52A5D700E22676 /* Toolbox */ = {
+			isa = PBXGroup;
+			children = (
+				68518EAD2A52A5D700E22676 /* String+BytesConvertible.swift */,
+				68518EAE2A52A5D700E22676 /* Bytes+HexString.swift */,
+				68518EAF2A52A5D700E22676 /* UInt+BytesRepresentable.swift */,
+				68518EB02A52A5D700E22676 /* Bytes+TrimLeadingZeros.swift */,
+				68518EB12A52A5D700E22676 /* Bytes+SecureRandom.swift */,
+				68518EB22A52A5D700E22676 /* EthereumUtils.swift */,
+				68518EB32A52A5D700E22676 /* String+HexBytes.swift */,
+				68518EB42A52A5D700E22676 /* BytesConvertible.swift */,
+				68518EB52A52A5D700E22676 /* String+Conversion.swift */,
+				68518EB62A52A5D700E22676 /* Data+BytesConvertible.swift */,
+				68518EB72A52A5D700E22676 /* CharacterSet+Hex.swift */,
+				68518EB82A52A5D700E22676 /* BigUInt+BytesConvertible.swift */,
+				68518EB92A52A5D700E22676 /* Bytes+UInt.swift */,
+				68518EBA2A52A5D700E22676 /* Exports+Web3.swift */,
+				68518EBB2A52A5D700E22676 /* Int+ETH.swift */,
+				68518EBC2A52A5D700E22676 /* SynchronizedArray.swift */,
+				68518EBD2A52A5D700E22676 /* UnsignedInteger+BytesConvertible.swift */,
+				68518EBE2A52A5D700E22676 /* SynchronizedDictionary.swift */,
+				68518EBF2A52A5D700E22676 /* Secp256k1+CTXCreator.swift */,
+				68518EC02A52A5D700E22676 /* UnsignedInteger+Shifting.swift */,
+			);
+			path = Toolbox;
+			sourceTree = "<group>";
+		};
+		68518EC12A52A5D800E22676 /* FoundationHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				68518EC32A52A5D800E22676 /* Web3+WebSocketInitializer.swift */,
+				68518EC42A52A5D800E22676 /* Web3+HTTPInitializer.swift */,
+				68518EC52A52A5D800E22676 /* Web3HttpProvider.swift */,
+				6861380E2A6EADB600805C54 /* Web3WebSocketProvider.swift */,
+			);
+			path = FoundationHTTP;
+			sourceTree = "<group>";
+		};
+		68518EC62A52A5DA00E22676 /* ContractABI */ = {
+			isa = PBXGroup;
+			children = (
+				68518EC72A52A5DA00E22676 /* Contract */,
+				68518ED12A52A5DA00E22676 /* ABI */,
+			);
+			path = ContractABI;
+			sourceTree = "<group>";
+		};
+		68518EC72A52A5DA00E22676 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				685184D12A7A479A0082A67E /* ERC721.swift */,
+				68518EC82A52A5DA00E22676 /* Eth+Contract.swift */,
+				68518EC92A52A5DA00E22676 /* SolidityEvent.swift */,
+				68518ECA2A52A5DA00E22676 /* ABIObject.swift */,
+				68518ECB2A52A5DA00E22676 /* ERC20.swift */,
+				68518ECD2A52A5DA00E22676 /* ERC165.swift */,
+				68518ECE2A52A5DA00E22676 /* SolidityFunction.swift */,
+				68518ECF2A52A5DA00E22676 /* EthereumContract.swift */,
+				68518ED02A52A5DA00E22676 /* SolidityInvocation.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		68518ED12A52A5DA00E22676 /* ABI */ = {
+			isa = PBXGroup;
+			children = (
+				68518ED22A52A5DA00E22676 /* Eth+ABI.swift */,
+				68518ED32A52A5DA00E22676 /* ABIEncoder.swift */,
+				68518ED42A52A5DA00E22676 /* ABIDecoder.swift */,
+				68518ED52A52A5DA00E22676 /* SolidityType.swift */,
+				68518ED62A52A5DA00E22676 /* SolidityType+Codable.swift */,
+				68518ED72A52A5DA00E22676 /* SolidityWrappedValue.swift */,
+				68518ED82A52A5DA00E22676 /* ABI.swift */,
+				68518ED92A52A5DA00E22676 /* SolidityTuple.swift */,
+				68518EDA2A52A5DA00E22676 /* ABIConvertible.swift */,
+			);
+			path = ABI;
+			sourceTree = "<group>";
+		};
+		68518EDB2A52A5DB00E22676 /* Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				68518EDC2A52A5DB00E22676 /* Web3+PromiseKit.swift */,
+				68518EDF2A52A5DB00E22676 /* ContractPromiseExtensions.swift */,
+			);
+			path = Concurrency;
+			sourceTree = "<group>";
+		};
+		68A8BB6B2A5F438E00FCB139 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				68137F462A52C7F700E6264A /* Arbitrage_Bot_Main.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		68DCBEFE2A45D420007DCB50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68ED7B0D2A6931ED00A656FC /* Foundation.framework */,
+				68DCBEFF2A45D420007DCB50 /* uSockets.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68DCBF092A45E0B8007DCB50 /* Arbitrage Demo */ = {
+			isa = PBXGroup;
+			children = (
+				68DCBF192A45EAF6007DCB50 /* Arbitrage Demo.entitlements */,
+			);
+			path = "Arbitrage Demo";
+			sourceTree = "<group>";
+		};
+		68F6FC5F2A459DA500E828DB = {
+			isa = PBXGroup;
+			children = (
+				68FCE2192A4EF59E009B79ED /* Package.swift */,
+				68F6FC6B2A459DA500E828DB /* Arbitrage Bot */,
+				68F6FC772A459DA500E828DB /* Arbitrage-BotTests */,
+				684292272A45AAA70043EF2F /* FastSockets */,
+				68DCBF092A45E0B8007DCB50 /* Arbitrage Demo */,
+				68137F452A52C7F700E6264A /* Arbitrage Bot Demo */,
+				68137F4F2A52C7F800E6264A /* Arbitrage Bot DemoTests */,
+				68137F652A52C8C400E6264A /* Arbitrage-Bot-Main */,
+				68F6FC6A2A459DA500E828DB /* Products */,
+				68DCBEFE2A45D420007DCB50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		68F6FC6A2A459DA500E828DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68F6FC692A459DA500E828DB /* Arbitrage_Bot.framework */,
+				68F6FC732A459DA500E828DB /* Arbitrage-BotTests.xctest */,
+				684292262A45AAA60043EF2F /* FastSockets.framework */,
+				68137F442A52C7F700E6264A /* Arbitrage_Bot_Demo.framework */,
+				68137F4B2A52C7F700E6264A /* Arbitrage Bot DemoTests.xctest */,
+				68137F642A52C8C400E6264A /* Arbitrage-Bot-Main */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68F6FC6B2A459DA500E828DB /* Arbitrage Bot */ = {
+			isa = PBXGroup;
+			children = (
+				68F6FC6D2A459DA500E828DB /* Arbitrage_Bot.docc */,
+				68FCE21A2A4EF624009B79ED /* Arbitrager */,
+				68F6FC832A459DDE00E828DB /* Aggregator */,
+				68F6FC6C2A459DA500E828DB /* Arbitrage_Bot.h */,
+			);
+			path = "Arbitrage Bot";
+			sourceTree = "<group>";
+		};
+		68F6FC772A459DA500E828DB /* Arbitrage-BotTests */ = {
+			isa = PBXGroup;
+			children = (
+				68F6FC782A459DA500E828DB /* CycleTests.swift */,
+				68F342372A4D8DCF002AC4B8 /* XCTest+Utils.swift */,
+				68137F7C2A53347600E6264A /* PriceCalculation.swift */,
+			);
+			path = "Arbitrage-BotTests";
+			sourceTree = "<group>";
+		};
+		68F6FC832A459DDE00E828DB /* Aggregator */ = {
+			isa = PBXGroup;
+			children = (
+				684EE4AD2A5438D8001E793F /* Cash */,
+				68518E8C2A52A5C800E22676 /* Web3 */,
+				68FCE1CF2A4EDA17009B79ED /* Controller */,
+				68FCE1F62A4EDA17009B79ED /* Global */,
+				68FCE1E42A4EDA17009B79ED /* Model */,
+				68FCE1DB2A4EDA17009B79ED /* Utils */,
+				6842921D2A45A1A20043EF2F /* ArbitragerInterface.swift */,
+			);
+			path = Aggregator;
+			sourceTree = "<group>";
+		};
+		68FCE1CF2A4EDA17009B79ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				68017B452A57116200837B89 /* Arbitrage Executor */,
+				68FCE1D02A4EDA17009B79ED /* RealtimeServerController.swift */,
+				68FCE1D12A4EDA17009B79ED /* Exchanges */,
+				68FCE1D32A4EDA17009B79ED /* Subscriptions */,
+				68FCE1D72A4EDA17009B79ED /* Publishers */,
+				68FCE1D92A4EDA17009B79ED /* Subscriber */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		68FCE1D12A4EDA17009B79ED /* Exchanges */ = {
+			isa = PBXGroup;
+			children = (
+				684301772A79583F00CAA17C /* UniswapV3.swift */,
+				68FCE1D22A4EDA17009B79ED /* UniswapV2.swift */,
+			);
+			path = Exchanges;
+			sourceTree = "<group>";
+		};
+		68FCE1D32A4EDA17009B79ED /* Subscriptions */ = {
+			isa = PBXGroup;
+			children = (
+				68017B3D2A570EBB00837B89 /* PriceData */,
+			);
+			path = Subscriptions;
+			sourceTree = "<group>";
+		};
+		68FCE1D72A4EDA17009B79ED /* Publishers */ = {
+			isa = PBXGroup;
+			children = (
+				68017B422A57100600837B89 /* Decision */,
+				68017B412A570FF800837B89 /* PriceData */,
+			);
+			path = Publishers;
+			sourceTree = "<group>";
+		};
+		68FCE1D92A4EDA17009B79ED /* Subscriber */ = {
+			isa = PBXGroup;
+			children = (
+				68017B3F2A570FBD00837B89 /* DecisionSubscriber.swift */,
+				68FCE1DA2A4EDA17009B79ED /* PriceDataSubscriber.swift */,
+			);
+			path = Subscriber;
+			sourceTree = "<group>";
+		};
+		68FCE1DB2A4EDA17009B79ED /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				68FCE1DC2A4EDA17009B79ED /* Array+Uint8.swift */,
+				68FCE1DD2A4EDA17009B79ED /* AnyCodable */,
+				68FCE1E12A4EDA17009B79ED /* BigInt+Typealias.swift */,
+				68FCE1E22A4EDA17009B79ED /* EthereumAddress+Utils.swift */,
+				68FCE1E32A4EDA17009B79ED /* BigUInt+Euler.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		68FCE1DD2A4EDA17009B79ED /* AnyCodable */ = {
+			isa = PBXGroup;
+			children = (
+				68FCE1DE2A4EDA17009B79ED /* AnyDecodable.swift */,
+				68FCE1DF2A4EDA17009B79ED /* AnyCodable.swift */,
+				68FCE1E02A4EDA17009B79ED /* AnyEncodable.swift */,
+			);
+			path = AnyCodable;
+			sourceTree = "<group>";
+		};
+		68FCE1E42A4EDA17009B79ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				68137F702A52E9C500E6264A /* Arbitrage Builder */,
+				68FCE1E52A4EDA17009B79ED /* Exchanges */,
+				68FCE1E92A4EDA17009B79ED /* Contracts */,
+				68FCE1EC2A4EDA17009B79ED /* Server */,
+				68FCE1F02A4EDA17009B79ED /* Data */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		68FCE1E52A4EDA17009B79ED /* Exchanges */ = {
+			isa = PBXGroup;
+			children = (
+				68FCE1E62A4EDA17009B79ED /* Quote.swift */,
+				68FCE1E72A4EDA17009B79ED /* Token.swift */,
+				68FCE1E82A4EDA17009B79ED /* Exchange.swift */,
+			);
+			path = Exchanges;
+			sourceTree = "<group>";
+		};
+		68FCE1E92A4EDA17009B79ED /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				681BE3052A795BD0006BBE6F /* UniswapV3Router.swift */,
+				68FCE1EA2A4EDA17009B79ED /* UniswapV2Router.swift */,
+				68FCE1EB2A4EDA17009B79ED /* UniswapV2Pair.swift */,
+				6862A45B2A56A24C002E825B /* SwapRouteCoordinator.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		68FCE1EC2A4EDA17009B79ED /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				68FCE1ED2A4EDA17009B79ED /* BotResponse.swift */,
+				68FCE1EE2A4EDA17009B79ED /* BotRequest.swift */,
+				68FCE1EF2A4EDA17009B79ED /* BotTopics.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		68FCE1F02A4EDA17009B79ED /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				68FCE1F12A4EDA17009B79ED /* AdjacencyList.swift */,
+				68FCE1F22A4EDA17009B79ED /* PriceDataStoreWrapper.swift */,
+				68FCE1F42A4EDA17009B79ED /* ReserveFeeInfo.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		68FCE1F32A4EDA17009B79ED /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				68A6F8FD2A545FC900CC9779 /* VisualGraph.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		68FCE1F62A4EDA17009B79ED /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				68FCE1F72A4EDA17009B79ED /* Environment.swift */,
+				68FCE1F82A4EDA17009B79ED /* Pairs.swift */,
+				68FCE1F92A4EDA17009B79ED /* Exchanges.swift */,
+				68FCE1FA2A4EDA17009B79ED /* Credentials.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		68FCE21A2A4EF624009B79ED /* Arbitrager */ = {
+			isa = PBXGroup;
+			children = (
+				68FCE21B2A4EF83D009B79ED /* include */,
+				68F6FCC32A459E8800E828DB /* arbitrager.m */,
+				68ED7B132A6976E400A656FC /* Aggregator-Swift.h */,
+			);
+			path = Arbitrager;
+			sourceTree = "<group>";
+		};
+		68FCE21B2A4EF83D009B79ED /* include */ = {
+			isa = PBXGroup;
+			children = (
+				6842921F2A45A9180043EF2F /* arbitrager.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		68137F3F2A52C7F700E6264A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68A8BB6D2A5FF42200FCB139 /* Arbitrage_Bot_Demo.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684292212A45AAA60043EF2F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68DCBF032A45DEC3007DCB50 /* libuwebsockets.h in Headers */,
+				684292292A45AAA70043EF2F /* FastSockets.h in Headers */,
+				68832F362A47531300607523 /* libusockets.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F6FC642A459DA500E828DB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F6FC7A2A459DA500E828DB /* Arbitrage_Bot.h in Headers */,
+				68ED7B122A6952EF00A656FC /* arbitrager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		68137F432A52C7F700E6264A /* Arbitrage Bot Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68137F532A52C7F800E6264A /* Build configuration list for PBXNativeTarget "Arbitrage Bot Demo" */;
+			buildPhases = (
+				68137F3F2A52C7F700E6264A /* Headers */,
+				68137F402A52C7F700E6264A /* Sources */,
+				68137F412A52C7F700E6264A /* Frameworks */,
+				68137F422A52C7F700E6264A /* Resources */,
+				68137F5F2A52C89400E6264A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68137F5E2A52C89400E6264A /* PBXTargetDependency */,
+			);
+			name = "Arbitrage Bot Demo";
+			productName = "Arbitrage Bot Demo";
+			productReference = 68137F442A52C7F700E6264A /* Arbitrage_Bot_Demo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		68137F4A2A52C7F700E6264A /* Arbitrage Bot DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68137F562A52C7F800E6264A /* Build configuration list for PBXNativeTarget "Arbitrage Bot DemoTests" */;
+			buildPhases = (
+				68137F472A52C7F700E6264A /* Sources */,
+				68137F482A52C7F700E6264A /* Frameworks */,
+				68137F492A52C7F700E6264A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68137F4E2A52C7F800E6264A /* PBXTargetDependency */,
+			);
+			name = "Arbitrage Bot DemoTests";
+			productName = "Arbitrage Bot DemoTests";
+			productReference = 68137F4B2A52C7F700E6264A /* Arbitrage Bot DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		68137F632A52C8C400E6264A /* Arbitrage-Bot-Main */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68137F682A52C8C400E6264A /* Build configuration list for PBXNativeTarget "Arbitrage-Bot-Main" */;
+			buildPhases = (
+				68137F602A52C8C400E6264A /* Sources */,
+				68137F612A52C8C400E6264A /* Frameworks */,
+				68137F622A52C8C400E6264A /* CopyFiles */,
+				68137F6F2A52C8CC00E6264A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68137F6E2A52C8CC00E6264A /* PBXTargetDependency */,
+			);
+			name = "Arbitrage-Bot-Main";
+			productName = "Arbitrage-Bot-Main";
+			productReference = 68137F642A52C8C400E6264A /* Arbitrage-Bot-Main */;
+			productType = "com.apple.product-type.tool";
+		};
+		684292252A45AAA60043EF2F /* FastSockets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6842922A2A45AAA70043EF2F /* Build configuration list for PBXNativeTarget "FastSockets" */;
+			buildPhases = (
+				684292212A45AAA60043EF2F /* Headers */,
+				684292222A45AAA60043EF2F /* Sources */,
+				684292232A45AAA60043EF2F /* Frameworks */,
+				684292242A45AAA60043EF2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastSockets;
+			productName = FastSockets;
+			productReference = 684292262A45AAA60043EF2F /* FastSockets.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		68F6FC682A459DA500E828DB /* Arbitrage Bot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68F6FC7D2A459DA500E828DB /* Build configuration list for PBXNativeTarget "Arbitrage Bot" */;
+			buildPhases = (
+				68F6FC642A459DA500E828DB /* Headers */,
+				68F6FC652A459DA500E828DB /* Sources */,
+				68F6FC662A459DA500E828DB /* Frameworks */,
+				68F6FC672A459DA500E828DB /* Resources */,
+				68DCBF132A45E711007DCB50 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68DCBF122A45E710007DCB50 /* PBXTargetDependency */,
+			);
+			name = "Arbitrage Bot";
+			packageProductDependencies = (
+				68F6FCCF2A45A0C100E828DB /* OpenCombine */,
+				68F6FCD12A45A0C100E828DB /* OpenCombineDispatch */,
+				68F6FCD32A45A0C100E828DB /* OpenCombineFoundation */,
+				6842921B2A45A1120043EF2F /* Euler */,
+				68FE7D482A4B067500D3A706 /* CollectionConcurrencyKit */,
+				68518F282A52B6A800E22676 /* CryptoSwift */,
+				68518F2B2A52B6E400E22676 /* BigInt */,
+				68518F2E2A52B76100E22676 /* Collections */,
+				68A6F9012A547D4400CC9779 /* SwiftPlot */,
+				68A6F9072A54880B00CC9779 /* SVGRenderer */,
+				68ED7B0B2A692C4300A656FC /* secp256k1 */,
+				686138112A6EADFB00805C54 /* WebSocketKit */,
+			);
+			productName = "Arbitrage-Bot";
+			productReference = 68F6FC692A459DA500E828DB /* Arbitrage_Bot.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		68F6FC722A459DA500E828DB /* Arbitrage-BotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68F6FC802A459DA500E828DB /* Build configuration list for PBXNativeTarget "Arbitrage-BotTests" */;
+			buildPhases = (
+				68F6FC6F2A459DA500E828DB /* Sources */,
+				68F6FC702A459DA500E828DB /* Frameworks */,
+				68F6FC712A459DA500E828DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68F6FC762A459DA500E828DB /* PBXTargetDependency */,
+			);
+			name = "Arbitrage-BotTests";
+			packageProductDependencies = (
+				68518F8B2A52BC8000E22676 /* Quick */,
+				68137F322A52BCB900E6264A /* Nimble */,
+				68A6F8F92A544B9400CC9779 /* AGGRenderer */,
+				68A6F8FB2A544B9400CC9779 /* SwiftPlot */,
+			);
+			productName = "Arbitrage-BotTests";
+			productReference = 68F6FC732A459DA500E828DB /* Arbitrage-BotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68F6FC602A459DA500E828DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					68137F432A52C7F700E6264A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					68137F4A2A52C7F700E6264A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					68137F632A52C8C400E6264A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					684292252A45AAA60043EF2F = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					68680A242A77D8BE0079309F = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					68F6FC682A459DA500E828DB = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
+					68F6FC722A459DA500E828DB = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 68F6FC632A459DA500E828DB /* Build configuration list for PBXProject "Arbitrage-Bot" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68F6FC5F2A459DA500E828DB;
+			packageReferences = (
+				68F6FCCE2A45A0C100E828DB /* XCRemoteSwiftPackageReference "OpenCombine" */,
+				6842921A2A45A1120043EF2F /* XCRemoteSwiftPackageReference "Euler" */,
+				68FE7D472A4B067500D3A706 /* XCRemoteSwiftPackageReference "CollectionConcurrencyKit" */,
+				68518F272A52B6A800E22676 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+				68518F2A2A52B6E400E22676 /* XCRemoteSwiftPackageReference "BigInt" */,
+				68518F2D2A52B76100E22676 /* XCRemoteSwiftPackageReference "swift-collections" */,
+				68518F8A2A52BC8000E22676 /* XCRemoteSwiftPackageReference "Quick" */,
+				68137F312A52BCB900E6264A /* XCRemoteSwiftPackageReference "Nimble" */,
+				68A6F8F82A544B9400CC9779 /* XCRemoteSwiftPackageReference "swiftplot" */,
+				68ED7B0A2A692C4300A656FC /* XCRemoteSwiftPackageReference "secp256k1" */,
+				686138102A6EADFB00805C54 /* XCRemoteSwiftPackageReference "websocket-kit" */,
+			);
+			productRefGroup = 68F6FC6A2A459DA500E828DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68F6FC682A459DA500E828DB /* Arbitrage Bot */,
+				68F6FC722A459DA500E828DB /* Arbitrage-BotTests */,
+				684292252A45AAA60043EF2F /* FastSockets */,
+				68137F432A52C7F700E6264A /* Arbitrage Bot Demo */,
+				68137F4A2A52C7F700E6264A /* Arbitrage Bot DemoTests */,
+				68137F632A52C8C400E6264A /* Arbitrage-Bot-Main */,
+				68680A242A77D8BE0079309F /* Periphery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68137F422A52C7F700E6264A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68137F492A52C7F700E6264A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684292242A45AAA60043EF2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F6FC672A459DA500E828DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F6FC712A459DA500E828DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68680A282A77D8C80079309F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/homebrew/bin/periphery scan --retain-public --format xcode\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68137F402A52C7F700E6264A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68137F5A2A52C80A00E6264A /* negate_log.c in Sources */,
+				68137F592A52C80A00E6264A /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68137F472A52C7F700E6264A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68137F512A52C7F800E6264A /* Arbitrage_Bot_DemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68137F602A52C8C400E6264A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68137F672A52C8C400E6264A /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684292222A45AAA60043EF2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6842922F2A45AAE40043EF2F /* libuwebsockets.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F6FC652A459DA500E828DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68518EFD2A52A5DB00E22676 /* Bytes+SecureRandom.swift in Sources */,
+				68FCE2172A4EDA18009B79ED /* Exchanges.swift in Sources */,
+				68017B442A57101400837B89 /* DecisionDataPublisher.swift in Sources */,
+				68FCE2042A4EDA18009B79ED /* AnyCodable.swift in Sources */,
+				68FCE20C2A4EDA18009B79ED /* UniswapV2Router.swift in Sources */,
+				68FCE2182A4EDA18009B79ED /* Credentials.swift in Sources */,
+				68137F782A53106400E6264A /* ProcessOpportunities.swift in Sources */,
+				68518EFF2A52A5DB00E22676 /* String+HexBytes.swift in Sources */,
+				68FCE2032A4EDA18009B79ED /* AnyDecodable.swift in Sources */,
+				68FCE2162A4EDA18009B79ED /* Pairs.swift in Sources */,
+				68518EE12A52A5DB00E22676 /* EthereumAddress.swift in Sources */,
+				68518F0A2A52A5DB00E22676 /* SynchronizedDictionary.swift in Sources */,
+				68FCE2132A4EDA18009B79ED /* ReserveFeeInfo.swift in Sources */,
+				68518F232A52A5DB00E22676 /* Web3+PromiseKit.swift in Sources */,
+				68FCE1FD2A4EDA18009B79ED /* PriceDataSubscription.swift in Sources */,
+				68518EE82A52A5DB00E22676 /* RLPItemConvertible.swift in Sources */,
+				68FCE2012A4EDA18009B79ED /* PriceDataSubscriber.swift in Sources */,
+				68518EE72A52A5DB00E22676 /* RLPEncoder.swift in Sources */,
+				68FCE2092A4EDA18009B79ED /* Quote.swift in Sources */,
+				68518F022A52A5DB00E22676 /* Data+BytesConvertible.swift in Sources */,
+				68518F192A52A5DB00E22676 /* SolidityInvocation.swift in Sources */,
+				6842921E2A45A1A20043EF2F /* ArbitragerInterface.swift in Sources */,
+				68FCE2072A4EDA18009B79ED /* EthereumAddress+Utils.swift in Sources */,
+				68518F172A52A5DB00E22676 /* SolidityFunction.swift in Sources */,
+				68FCE2002A4EDA18009B79ED /* PriceDataPublisher.swift in Sources */,
+				68518EE52A52A5DB00E22676 /* Web3.swift in Sources */,
+				68FCE20D2A4EDA18009B79ED /* UniswapV2Pair.swift in Sources */,
+				68518F012A52A5DB00E22676 /* String+Conversion.swift in Sources */,
+				68FCE2122A4EDA18009B79ED /* PriceDataStoreWrapper.swift in Sources */,
+				68FCE20B2A4EDA18009B79ED /* Exchange.swift in Sources */,
+				68518F042A52A5DB00E22676 /* BigUInt+BytesConvertible.swift in Sources */,
+				68137F722A52EA6E00E6264A /* BuilderStep.swift in Sources */,
+				68FCE1FE2A4EDA18009B79ED /* PriceDataSubscriptionType.swift in Sources */,
+				68518EF32A52A5DB00E22676 /* EthereumValue.swift in Sources */,
+				68137F762A52FC7100E6264A /* ArbitrageBuilder.swift in Sources */,
+				68518EEF2A52A5DB00E22676 /* EthereumSyncStatusObject.swift in Sources */,
+				68518EE92A52A5DB00E22676 /* RLPDecoder.swift in Sources */,
+				68FCE2102A4EDA18009B79ED /* BotTopics.swift in Sources */,
+				68FCE2082A4EDA18009B79ED /* BigUInt+Euler.swift in Sources */,
+				68518F0E2A52A5DB00E22676 /* Web3+WebSocketInitializer.swift in Sources */,
+				68518F092A52A5DB00E22676 /* UnsignedInteger+BytesConvertible.swift in Sources */,
+				68518EF72A52A5DB00E22676 /* Types+EthereumValueConvertible.swift in Sources */,
+				68518EEE2A52A5DB00E22676 /* RPCRequest.swift in Sources */,
+				68518F102A52A5DB00E22676 /* Web3HttpProvider.swift in Sources */,
+				68518EF42A52A5DB00E22676 /* RPCResponse.swift in Sources */,
+				68518EF82A52A5DB00E22676 /* EthereumLogObject.swift in Sources */,
+				68FCE2022A4EDA18009B79ED /* Array+Uint8.swift in Sources */,
+				68A8BB6A2A5EE9BA00FCB139 /* Trade.swift in Sources */,
+				68518F122A52A5DB00E22676 /* SolidityEvent.swift in Sources */,
+				68518EF62A52A5DB00E22676 /* EthereumQuantityTag.swift in Sources */,
+				68FCE2152A4EDA18009B79ED /* Environment.swift in Sources */,
+				68518F142A52A5DB00E22676 /* ERC20.swift in Sources */,
+				681BE3062A795BD0006BBE6F /* UniswapV3Router.swift in Sources */,
+				68518F0B2A52A5DB00E22676 /* Secp256k1+CTXCreator.swift in Sources */,
+				68518F1C2A52A5DB00E22676 /* ABIDecoder.swift in Sources */,
+				68017B402A570FBD00837B89 /* DecisionSubscriber.swift in Sources */,
+				68ED7B112A6952ED00A656FC /* arbitrager.m in Sources */,
+				68137F742A52F2D900E6264A /* OptimalPrice.swift in Sources */,
+				68518F212A52A5DB00E22676 /* SolidityTuple.swift in Sources */,
+				68518F182A52A5DB00E22676 /* EthereumContract.swift in Sources */,
+				68518F1A2A52A5DB00E22676 /* Eth+ABI.swift in Sources */,
+				68518EF12A52A5DB00E22676 /* EthereumQuantity.swift in Sources */,
+				68518F112A52A5DB00E22676 /* Eth+Contract.swift in Sources */,
+				6862A45C2A56A24C002E825B /* SwapRouteCoordinator.swift in Sources */,
+				68FCE2112A4EDA18009B79ED /* AdjacencyList.swift in Sources */,
+				68518F052A52A5DB00E22676 /* Bytes+UInt.swift in Sources */,
+				68518F162A52A5DB00E22676 /* ERC165.swift in Sources */,
+				68518F002A52A5DB00E22676 /* BytesConvertible.swift in Sources */,
+				68518EED2A52A5DB00E22676 /* EthereumData.swift in Sources */,
+				68518F1E2A52A5DB00E22676 /* SolidityType+Codable.swift in Sources */,
+				68518F082A52A5DB00E22676 /* SynchronizedArray.swift in Sources */,
+				68FCE1FF2A4EDA18009B79ED /* PriceDataSubscriptionState.swift in Sources */,
+				68518F062A52A5DB00E22676 /* Exports+Web3.swift in Sources */,
+				68FCE2052A4EDA18009B79ED /* AnyEncodable.swift in Sources */,
+				68518EE32A52A5DB00E22676 /* EthereumTransaction.swift in Sources */,
+				68FCE20F2A4EDA18009B79ED /* BotRequest.swift in Sources */,
+				685184D22A7A479A0082A67E /* ERC721.swift in Sources */,
+				68518EFC2A52A5DB00E22676 /* Bytes+TrimLeadingZeros.swift in Sources */,
+				68518F072A52A5DB00E22676 /* Int+ETH.swift in Sources */,
+				68518EF02A52A5DB00E22676 /* EthereumValueConvertible.swift in Sources */,
+				68518EE42A52A5DB00E22676 /* Web3Provider.swift in Sources */,
+				68518F032A52A5DB00E22676 /* CharacterSet+Hex.swift in Sources */,
+				68518EFB2A52A5DB00E22676 /* UInt+BytesRepresentable.swift in Sources */,
+				68F6FC6E2A459DA500E828DB /* Arbitrage_Bot.docc in Sources */,
+				68518EEA2A52A5DB00E22676 /* Types+RLPItemConvertible.swift in Sources */,
+				68FCE20E2A4EDA18009B79ED /* BotResponse.swift in Sources */,
+				68518EF22A52A5DB00E22676 /* EthereumTransactionObject.swift in Sources */,
+				68518EF52A52A5DB00E22676 /* EthereumCall.swift in Sources */,
+				68518F0C2A52A5DB00E22676 /* UnsignedInteger+Shifting.swift in Sources */,
+				68518F1D2A52A5DB00E22676 /* SolidityType.swift in Sources */,
+				684EE4AF2A5438E2001E793F /* Cash.swift in Sources */,
+				68518F1F2A52A5DB00E22676 /* SolidityWrappedValue.swift in Sources */,
+				684301782A79583F00CAA17C /* UniswapV3.swift in Sources */,
+				68518F132A52A5DB00E22676 /* ABIObject.swift in Sources */,
+				68518F222A52A5DB00E22676 /* ABIConvertible.swift in Sources */,
+				68518EE22A52A5DB00E22676 /* EthereumPrivateKey.swift in Sources */,
+				68518EE02A52A5DB00E22676 /* EthereumPublicKey.swift in Sources */,
+				68518EEB2A52A5DB00E22676 /* EthereumBlockObject.swift in Sources */,
+				68518EF92A52A5DB00E22676 /* String+BytesConvertible.swift in Sources */,
+				68FCE20A2A4EDA18009B79ED /* Token.swift in Sources */,
+				68518EEC2A52A5DB00E22676 /* EthereumTransactionReceiptObject.swift in Sources */,
+				68518F0F2A52A5DB00E22676 /* Web3+HTTPInitializer.swift in Sources */,
+				68518F262A52A5DB00E22676 /* ContractPromiseExtensions.swift in Sources */,
+				68518F202A52A5DB00E22676 /* ABI.swift in Sources */,
+				68FCE2062A4EDA18009B79ED /* BigInt+Typealias.swift in Sources */,
+				68017B472A57117600837B89 /* ArbitrageSwapCoordinator.swift in Sources */,
+				6861380F2A6EADB600805C54 /* Web3WebSocketProvider.swift in Sources */,
+				68518EE62A52A5DB00E22676 /* RLPItem.swift in Sources */,
+				68FCE1FB2A4EDA18009B79ED /* RealtimeServerController.swift in Sources */,
+				68518EFA2A52A5DB00E22676 /* Bytes+HexString.swift in Sources */,
+				68518EFE2A52A5DB00E22676 /* EthereumUtils.swift in Sources */,
+				68FCE1FC2A4EDA18009B79ED /* UniswapV2.swift in Sources */,
+				68518F1B2A52A5DB00E22676 /* ABIEncoder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F6FC6F2A459DA500E828DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F342382A4D8DCF002AC4B8 /* XCTest+Utils.swift in Sources */,
+				68137F7D2A53347600E6264A /* PriceCalculation.swift in Sources */,
+				68F6FC792A459DA500E828DB /* CycleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68137F4E2A52C7F800E6264A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68137F432A52C7F700E6264A /* Arbitrage Bot Demo */;
+			targetProxy = 68137F4D2A52C7F800E6264A /* PBXContainerItemProxy */;
+		};
+		68137F5E2A52C89400E6264A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68F6FC682A459DA500E828DB /* Arbitrage Bot */;
+			targetProxy = 68137F5D2A52C89400E6264A /* PBXContainerItemProxy */;
+		};
+		68137F6E2A52C8CC00E6264A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68137F432A52C7F700E6264A /* Arbitrage Bot Demo */;
+			targetProxy = 68137F6D2A52C8CC00E6264A /* PBXContainerItemProxy */;
+		};
+		68DCBF122A45E710007DCB50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 684292252A45AAA60043EF2F /* FastSockets */;
+			targetProxy = 68DCBF112A45E710007DCB50 /* PBXContainerItemProxy */;
+		};
+		68F6FC762A459DA500E828DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68F6FC682A459DA500E828DB /* Arbitrage Bot */;
+			targetProxy = 68F6FC752A459DA500E828DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		68137F542A52C7F800E6264A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 73CCF549YB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"XCODEBUILD=1",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PyratzLabs.Arbitrage-Bot-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68137F552A52C7F800E6264A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 73CCF549YB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "XCODEBUILD=1";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PyratzLabs.Arbitrage-Bot-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		68137F572A52C7F800E6264A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73CCF549YB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PyratzLabs.Arbitrage-Bot-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68137F582A52C7F800E6264A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73CCF549YB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PyratzLabs.Arbitrage-Bot-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		68137F692A52C8C400E6264A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73CCF549YB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"XCODEBUILD=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		68137F6A2A52C8C400E6264A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73CCF549YB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "XCODEBUILD=1";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6842922B2A45AAA70043EF2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 73CCF549YB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"XCODEBUILD=1",
+					"DEBUG=1",
+				);
+				GCC_VERSION = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FastSockets/uWebSockets/uSockets",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PyratzLabs.FastSockets;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				SYSTEM_HEADER_SEARCH_PATHS = "/usr/local/include/uWebSockets/**";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6842922C2A45AAA70043EF2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 73CCF549YB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "XCODEBUILD=1";
+				GCC_VERSION = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FastSockets/uWebSockets/uSockets",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PyratzLabs.FastSockets;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				SYSTEM_HEADER_SEARCH_PATHS = "/usr/local/include/uWebSockets/**";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		68680A262A77D8BE0079309F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73CCF549YB;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		68680A272A77D8BE0079309F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73CCF549YB;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		68F6FC7B2A459DA500E828DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OBJC_INTEROP_MODE = objc;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		68F6FC7C2A459DA500E828DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_INTEROP_MODE = objc;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		68F6FC7E2A459DA500E828DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 73CCF549YB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"XCODEBUILD=1",
+					"DEBUG=1",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MERGEABLE_LIBRARY = YES;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PyratzLabs.Arbitrage-Bot";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_INTEROP_MODE = objc;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		68F6FC7F2A459DA500E828DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 73CCF549YB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "XCODEBUILD=1";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MERGEABLE_LIBRARY = YES;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PyratzLabs.Arbitrage-Bot";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_INTEROP_MODE = objc;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		68F6FC812A459DA500E828DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PyratzLabs.Arbitrage-BotTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68F6FC822A459DA500E828DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PyratzLabs.Arbitrage-BotTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68137F532A52C7F800E6264A /* Build configuration list for PBXNativeTarget "Arbitrage Bot Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68137F542A52C7F800E6264A /* Debug */,
+				68137F552A52C7F800E6264A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68137F562A52C7F800E6264A /* Build configuration list for PBXNativeTarget "Arbitrage Bot DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68137F572A52C7F800E6264A /* Debug */,
+				68137F582A52C7F800E6264A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68137F682A52C8C400E6264A /* Build configuration list for PBXNativeTarget "Arbitrage-Bot-Main" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68137F692A52C8C400E6264A /* Debug */,
+				68137F6A2A52C8C400E6264A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6842922A2A45AAA70043EF2F /* Build configuration list for PBXNativeTarget "FastSockets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6842922B2A45AAA70043EF2F /* Debug */,
+				6842922C2A45AAA70043EF2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68680A252A77D8BE0079309F /* Build configuration list for PBXAggregateTarget "Periphery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68680A262A77D8BE0079309F /* Debug */,
+				68680A272A77D8BE0079309F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68F6FC632A459DA500E828DB /* Build configuration list for PBXProject "Arbitrage-Bot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68F6FC7B2A459DA500E828DB /* Debug */,
+				68F6FC7C2A459DA500E828DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68F6FC7D2A459DA500E828DB /* Build configuration list for PBXNativeTarget "Arbitrage Bot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68F6FC7E2A459DA500E828DB /* Debug */,
+				68F6FC7F2A459DA500E828DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68F6FC802A459DA500E828DB /* Build configuration list for PBXNativeTarget "Arbitrage-BotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68F6FC812A459DA500E828DB /* Debug */,
+				68F6FC822A459DA500E828DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68137F312A52BCB900E6264A /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		6842921A2A45A1120043EF2F /* XCRemoteSwiftPackageReference "Euler" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/arguiot/Euler";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.9;
+			};
+		};
+		68518F272A52B6A800E22676 /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.2;
+			};
+		};
+		68518F2A2A52B6E400E22676 /* XCRemoteSwiftPackageReference "BigInt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/attaswift/BigInt";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		68518F2D2A52B76100E22676 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+		68518F8A2A52BC8000E22676 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		686138102A6EADFB00805C54 /* XCRemoteSwiftPackageReference "websocket-kit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vapor/websocket-kit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.14.0;
+			};
+		};
+		68A6F8F82A544B9400CC9779 /* XCRemoteSwiftPackageReference "swiftplot" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KarthikRIyer/swiftplot";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		68ED7B0A2A692C4300A656FC /* XCRemoteSwiftPackageReference "secp256k1" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Boilertalk/secp256k1.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.7;
+			};
+		};
+		68F6FCCE2A45A0C100E828DB /* XCRemoteSwiftPackageReference "OpenCombine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OpenCombine/OpenCombine";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.0;
+			};
+		};
+		68FE7D472A4B067500D3A706 /* XCRemoteSwiftPackageReference "CollectionConcurrencyKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JohnSundell/CollectionConcurrencyKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68137F322A52BCB900E6264A /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68137F312A52BCB900E6264A /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		6842921B2A45A1120043EF2F /* Euler */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6842921A2A45A1120043EF2F /* XCRemoteSwiftPackageReference "Euler" */;
+			productName = Euler;
+		};
+		68518F282A52B6A800E22676 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68518F272A52B6A800E22676 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+		68518F2B2A52B6E400E22676 /* BigInt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68518F2A2A52B6E400E22676 /* XCRemoteSwiftPackageReference "BigInt" */;
+			productName = BigInt;
+		};
+		68518F2E2A52B76100E22676 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68518F2D2A52B76100E22676 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		68518F8B2A52BC8000E22676 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68518F8A2A52BC8000E22676 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		686138112A6EADFB00805C54 /* WebSocketKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 686138102A6EADFB00805C54 /* XCRemoteSwiftPackageReference "websocket-kit" */;
+			productName = WebSocketKit;
+		};
+		68A6F8F92A544B9400CC9779 /* AGGRenderer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68A6F8F82A544B9400CC9779 /* XCRemoteSwiftPackageReference "swiftplot" */;
+			productName = AGGRenderer;
+		};
+		68A6F8FB2A544B9400CC9779 /* SwiftPlot */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68A6F8F82A544B9400CC9779 /* XCRemoteSwiftPackageReference "swiftplot" */;
+			productName = SwiftPlot;
+		};
+		68A6F9012A547D4400CC9779 /* SwiftPlot */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68A6F8F82A544B9400CC9779 /* XCRemoteSwiftPackageReference "swiftplot" */;
+			productName = SwiftPlot;
+		};
+		68A6F9072A54880B00CC9779 /* SVGRenderer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68A6F8F82A544B9400CC9779 /* XCRemoteSwiftPackageReference "swiftplot" */;
+			productName = SVGRenderer;
+		};
+		68ED7B0B2A692C4300A656FC /* secp256k1 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68ED7B0A2A692C4300A656FC /* XCRemoteSwiftPackageReference "secp256k1" */;
+			productName = secp256k1;
+		};
+		68F6FCCF2A45A0C100E828DB /* OpenCombine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68F6FCCE2A45A0C100E828DB /* XCRemoteSwiftPackageReference "OpenCombine" */;
+			productName = OpenCombine;
+		};
+		68F6FCD12A45A0C100E828DB /* OpenCombineDispatch */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68F6FCCE2A45A0C100E828DB /* XCRemoteSwiftPackageReference "OpenCombine" */;
+			productName = OpenCombineDispatch;
+		};
+		68F6FCD32A45A0C100E828DB /* OpenCombineFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68F6FCCE2A45A0C100E828DB /* XCRemoteSwiftPackageReference "OpenCombine" */;
+			productName = OpenCombineFoundation;
+		};
+		68FE7D482A4B067500D3A706 /* CollectionConcurrencyKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68FE7D472A4B067500D3A706 /* XCRemoteSwiftPackageReference "CollectionConcurrencyKit" */;
+			productName = CollectionConcurrencyKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 68F6FC602A459DA500E828DB /* Project object */;
+}

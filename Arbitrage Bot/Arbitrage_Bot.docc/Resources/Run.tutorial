@@ -1,0 +1,79 @@
+@Tutorial(time: 5) {
+    @Intro(title: "Running the bot") {
+        This tutorial guides you through running the arbitrage bot.
+        
+        The bot is written in C, C++, Objective-C, Swift and TypeScript. Although it is technically possible to run the bot on other platforms, this tutorial will focus on macOS.
+        
+        <!-- @Image(source: <#file#>, alt: "<#accessible description#>") -->
+    }
+    
+    @Section(title: "Run the project using Xcode") {
+        @ContentAndMedia {
+            Once you have the project ready in Xcode, let's run it.
+            
+            <!-- @Image(source: "clone-git.png", alt: "Clone a Git Repository") -->
+        }
+        
+        @Steps {
+            @Step {
+                Choose the right target
+                
+                @Image(source: "xcode-target.png", alt: "Choose Xcode target")
+            }
+            
+            @Step {
+                Build the bot **⌘ R**. You should see a "Build Succeeded" message once it's completed. The logs will appear in the bototm right of the window, letting you know the bot is up and runing 💪🏻
+                
+                @Image(source: "running-xcode.png", alt: "Running target using Xcode")
+            }
+        }
+    }
+    
+    @Section(title: "Run the project without Xcode") {
+        @ContentAndMedia {
+            Alternatively, you can run the project without Xcode. Skip this if you are already using Xcode.
+            
+            <!-- @Image(source: "clone-git.png", alt: "Clone a Git Repository") -->
+        }
+        
+        @Steps {
+            @Step {
+                Open a terminal window and navigate to the project directory.
+                
+                @Image(source: "terminal.png", alt: "Terminal")
+            }
+            
+            @Step {
+                Build the bot using `make`
+                
+                @Code(name: "Run this in your terminal", file: "build.sh") {
+                    @Image(source: "build-make.png", alt: "Build using make")
+                }
+            }
+            
+            @Step {
+                Run the bot
+                
+                @Code(name: "Run this in your terminal", file: "run.sh") {
+                    @Image(source: "run-bot-sh.png", alt: "Run using terminal")
+                }
+            }
+        }
+    }
+    
+    @Section(title: "Make sure the interface is connected") {
+        @ContentAndMedia {
+            Let's see if the web interface was able to connect.
+            
+            @Image(source: "web-interface-connected.png", alt: "Web Interface Connected")
+        }
+        
+        @Steps {
+            @Step {
+                Open http://localhost:3000 in your browser. If the dot is green, then we're all set!
+                
+                @Image(source: "web-interface-connected.png", alt: "Web Interface Connected")
+            }
+        }
+    }
+}

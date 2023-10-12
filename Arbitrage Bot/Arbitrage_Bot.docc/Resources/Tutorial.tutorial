@@ -1,0 +1,33 @@
+@Tutorials(name: "Arbitrage bot") {
+    @Intro(title: "Configure, build and run the bot") {
+        The arbitrage bot is a high-level, efficient, and streamlined library designed to facilitate development of cryptocurrency bots. You will learn how to customise it for your needs, and deploy a strategy for performing on-chain arbitrage.
+        
+<!--        @Image(source: <#file#>, alt: "<#accessible description#>")-->
+    }
+    
+    @Chapter(name: "Installation") {
+        Here, we will see how to correctly install and build the bot.
+        
+        @Image(source: "clone-git.png", alt: "Clone a Git Repository")
+        
+        @TutorialReference(tutorial: "doc:Installation")
+        @TutorialReference(tutorial: "doc:Build")
+    }
+    
+    @Chapter(name: "Running the bot") {
+        Here, we will see how to run the bot.
+        
+        @Image(source: "web-interface.png", alt: "Web Interface")
+        
+        @TutorialReference(tutorial: "doc:WebServer")
+        @TutorialReference(tutorial: "doc:Run")
+    }
+    
+    @Chapter(name: "Customizing the bot") {
+        Here, we will see how to customize the bot.
+        
+        @Image(source: "eth.png", alt: "Ethereum")
+        
+        @TutorialReference(tutorial: "doc:SmartContract")
+    }
+}

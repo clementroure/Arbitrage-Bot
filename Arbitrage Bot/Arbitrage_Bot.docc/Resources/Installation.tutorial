@@ -1,0 +1,45 @@
+@Tutorial(time: 5) {
+    @Intro(title: "Installing the bot") {
+		This tutorial guides you through installing the arbitrage bot.
+
+		The bot is written in C, C++, Objective-C, Swift and TypeScript. Although it is technically possible to run the bot on other platforms, this tutorial will focus on macOS.
+
+        @Image(source: "clone-git.png", alt: "Clone a Git Repository")
+    }
+
+    @Section(title: "Download the project") {
+        @ContentAndMedia {
+            Let's start by downloading the project from GitHub.
+
+            <!-- @Image(source: "clone-git.png", alt: "Clone a Git Repository") -->
+        }
+
+        @Steps {
+            @Step {
+                Open Xcode and either click “Create a new Xcode project” in Xcode’s startup window, or choose File > New > Project.
+
+                @Image(source: "clone-git.png", alt: "Clone a Git Repository")
+            }
+
+			@Step {
+				In the dialog that appears, select the repository, and click “Clone”.
+
+				@Image(source: "liquidation-gitlab.png", alt: "Clone a Git Repository")
+			}
+
+            @Step {
+                Now that you have the project in Xcode, open a terminal window and navigate to the project directory.
+
+                @Image(source: "terminal.png", alt: "Terminal")
+            }
+
+            @Step {
+            	Install the dependencies by running `npm install` in the project directory. If you don't have npm installed, you can install Node.js from [here](https://nodejs.org/en/download/).
+
+             	@Code(name: "Run this in your terminal", file: "install.sh") {
+
+                }
+            }
+        }
+    }
+}

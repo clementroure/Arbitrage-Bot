@@ -1,0 +1,65 @@
+@Tutorial(time: 30) {
+    @Intro(title: "Smart Contracts") {
+        This tutorial guides you through deploying smart contracts, and creating custom intermediary contracts.
+        
+        @Image(source: "eth.png", alt: "Ethereum's Solidity")
+    }
+    
+    @Section(title: "Deploying smart contracts") {
+        @ContentAndMedia {
+            Deploying smart contracts to Ethereum is trivial with Hardhat.
+        }
+        
+        @Steps {
+            @Step {
+                Open a terminal window and navigate to the project directory.
+                
+                @Image(source: "terminal.png", alt: "Terminal")
+            }
+            
+            @Step {
+                Update the Hardhat configuration
+                
+                @Code(name: "hardhat.config.ts", file: "hardhat.config.ts")
+            }
+            
+            @Step {
+                Deploy contracts.
+                
+                @Code(name: "Run this in your terminal", file: "hardhat-deploy.sh")
+            }
+            
+            @Step {
+                Update contracts address in the code.
+                
+                Open `Arbitrage Bot/Aggregator/Global/Exchanges.swift`, and update both `swapCoordinatorDevAddress` and `coordinator` property for each affected exchange.
+                
+                @Image(source: "update-address.png", alt: "Update contract address")
+            }
+        }
+    }
+        
+    @Section(title: "Writing intermediary smart contracts") {
+        @ContentAndMedia {
+            If you want to use the bot on non-Uniswap V2 DEX, you will have to write intermediary smart contracts
+        }
+        
+        @Steps {
+            @Step {
+                Open your text editor, and create a new contract in the `contract` directory
+                
+                @Image(source: "new-contract.png", alt: "New Solidity Contract")
+            }
+            
+            @Step {
+                Write your contract. Make sure to test your contract before deploying.
+                
+                @Code(name: "uniswap-v3.sol", file: "uniswap-v3.sol")
+            }
+            
+            @Step {
+                Update the `deploySwapMecanism.ts` script.
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+# node.js dependencies
+node_modules/
+
+# debugging and development files
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+
+# build artifacts
+build/
+
+# performance monitoring and error reporting
+pm2/
+
+# other temporary or generated files
+*.swp

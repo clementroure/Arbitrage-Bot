@@ -1,0 +1,9 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+build:
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - docker build -t arbitrage .

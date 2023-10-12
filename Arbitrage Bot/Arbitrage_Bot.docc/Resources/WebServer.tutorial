@@ -1,0 +1,33 @@
+@Tutorial(time: 5) {
+    @Intro(title: "Running the web server") {
+        This tutorial guides you through running the Next.JS server for the bot.
+        
+        The Arbitrage Bot library comes with a nice, user friendly interface for interacting with the bot server.
+        
+        @Image(source: "web-interface.png", alt: "Web Interface")
+    }
+    
+    @Section(title: "Starting the server") {
+        @ContentAndMedia {
+            Let's see how you can start the server, and use the web interface.
+            
+            @Image(source: "web-interface.png", alt: "Web Interface")
+        }
+        
+        @Steps {
+            @Step {
+                Open a terminal window and navigate to the project directory.
+                
+                @Image(source: "terminal.png", alt: "Terminal")
+            }
+            
+            @Step {
+                Start the server, and open http://localhost:3000 in your browser
+                
+                @Code(name: "Run this in your terminal", file: "start-server.sh") {
+                    @Image(source: "web-interface.png", alt: "Web Interface")
+                }
+            }
+        }
+    }
+}
