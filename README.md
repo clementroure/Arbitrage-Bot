@@ -64,3 +64,10 @@ As we aim to provide a simple and easy-to-use library, we have also included a s
 > WETH_CONTRACT_ADDRESS=0xd1f55F0C1b1ae589b9bad543bab96e841AF2b2d1
 > WALLET_PRIVATE_KEY="..."
 > ```
+
+## Gallery
+
+<img src="https://github.com/clementroure/Arbitrage-Bot/assets/13381610/8f6387c4-d643-453b-9a3e-e1a07f4506ef" width="800">
+<img src="https://github.com/clementroure/Arbitrage-Bot/assets/13381610/2fda3b9f-1e8c-4124-a4ee-c52bded2b7eb" width="800">
+<img src="https://github.com/clementroure/Arbitrage-Bot/assets/13381610/b93375db-c546-4b61-9192-917a96bfa07a" width="800">
+
