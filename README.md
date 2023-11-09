@@ -65,7 +65,7 @@ As we aim to provide a simple and easy-to-use library, we have also included a s
 > WALLET_PRIVATE_KEY="..."
 > ```
 
-## Gallery
+### Gallery
 
 <img src="https://github.com/clementroure/Arbitrage-Bot/assets/13381610/8f6387c4-d643-453b-9a3e-e1a07f4506ef" width="800">
 <img src="https://github.com/clementroure/Arbitrage-Bot/assets/13381610/2fda3b9f-1e8c-4124-a4ee-c52bded2b7eb" width="800">
